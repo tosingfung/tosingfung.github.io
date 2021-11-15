@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<main class="site-main fadeInDown delay_075s">
+  <article class="post" style="background: #ffe; padding: 1em 1em; margin-bottom:2em">
+    <h2>
+      My favorite posts:
+    </h2>
+    <ul style="margin: 0 0 0.5em">
+      <li><a href="/drawing-plasmid-map-with-powerpoint">Powerpoint - Drawing plasmid maps</a></li>
+      <li><a href="/mutable-re-sites-in-peptide">Python - Mutable RE sites in a peptide</a></li>
+	  <li><a href="/seven-methods-to-insert-greek-in-word"</li>Word - 7 ways to insert Greek letters</a></li>
+    </ul>
+	<h2 style="margin: 0.5em 0 0.5em">
+      My favorite tags:
+    </h2>
+	<p style="margin-bottom: 0">
+	<span style="padding-right: 10px"><a href="#drawing">#drawing</a></span>
+	<span style="padding-right: 10px"><a href="#python-script">#python-script</a></span>
+	
+	</p>
+  </article><!-- .post -->
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">{{page.title}}</h1>
+    </header><!-- .post-header -->
+    <div class="post-content">
+      <div class="archive-tags">
+        {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+        {% assign sortedTags = site_tags | split:',' | sort %}
+        {% for tag in sortedTags %}
+        <a href="#{{ tag | cgi_escape }}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+        {% endfor %}
+      </div><!-- .archive-tag-list -->
+  <hr/> 
+      {% for tag in sortedTags %}
+        <h2 id="{{ tag | cgi_escape }}">{{ tag }}</h2>
+        <ul class="archive-post-list">
+        {% for post in site.tags[tag] %}
+          <li><span class="archive-meta"><time class="archive-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%Y-%m-%d" }}</time> — </span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </li>
+        {% endfor %}
+        </ul><!-- .archive-post-list -->
+        <p style="margin-top:0"><a href="#top" class="archive-top-link">&#8593; Return to top</a></p>
+      {% endfor %}
+    </div><!-- .post-content -->
+  </article><!-- .post -->
+  <div style="margin-top: 3em"></div>
+</main><!-- .site-main -->

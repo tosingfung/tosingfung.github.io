@@ -1,0 +1,27 @@
+/* ==========================================================================
+   8. Site Footer
+   ========================================================================== */
+
+.site-footer {
+  border-top: 3px solid _palette(meta);
+  padding: 0;
+  text-align: right;
+}
+
+.offsite-links {
+  margin-bottom: 0;
+  a {
+    color: _palette(primary);
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+    &:hover{
+      color: _palette(accent);
+    }
+  }
+}
+
+.site-info {
+  font-size: 14px;
+}

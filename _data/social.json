@@ -1,0 +1,19 @@
+{
+  "links": [
+    {
+      "title": "GitHub",
+      "icon": "fa-github",
+      "url": "https://github.com/tosingfung"
+    },
+    {
+      "title": "Email",
+      "icon": "fa-envelope",
+      "url": "mailto:"
+    },
+    {
+      "title": "RSS",
+      "icon": "fa-rss",
+      "url": "https://tosingfung.github.io/feed.xml"
+    }
+  ]
+}
