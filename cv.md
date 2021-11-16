@@ -7,25 +7,38 @@ permalink: /cv
 
 <h1 align="center">Curriculum Vitae</h1>
 
-<div align="right">
+<p align="right">
 <span>
-	<br>Update: 2021-10-15
-	<br><a href="/cv-cn">中文版本</a> 
+	Update: 2021-10-15
+</span>
+</p>
+
+<div
+style="
+background: #ffe;
+border: solid 1px #f5f5f5;
+padding: 0.5em 2em 0.5em;
+margin: 0 0 0">
+<span><a href="#basic">Basic Information</a>
+<ul style="margin: 0 0 0">
+    <li><a href="#work">Work Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#language">Language Proficiency</a></li>
+    <li><a href="#IT">IT proficiency</a></li>
+    <li><a href="#teaching">Teaching Experience</a></li>
+</ul>
+    <a href="#research">Research Direction</a>
+    <br><a href="#grant">Research Grant</a>
+<br>Publication
+<ul style="margin: 0 0 0">
+    <li><a href="#paper">Research Paper (PDFs)</a></li>
+    <li><a href="#book">Book Chapter (PDFs)</a></li>
+    <li><a href="#conference">Conference</a></li>
+    <li><a href="#pattern">Pattern</a></li>
+</ul>
+<a href="#award">Award & Honor</a>
 </span>
 </div>
-<br><a href="#basic">Basic Information</a>
-<br><a href="#work">Work Experience</a>
-<br><a href="#education">Education</a>
-<br><a href="#language">Language Proficiency</a>
-<br><a href="#IT">IT proficiency</a>
-<br><a href="#teaching">Teaching Experience</a>
-<br><a href="#research">Research Direction</a>
-<br><a href="#grant">Research Grant</a>
-<br><a href="#paper">Research Paper</a>
-<br><a href="#book">Book Chapter</a>
-<br><a href="#conference">Conference</a>
-<br><a href="#pattern">Pattern</a>
-<br><a href="#award">Award & Honor</a>
 
 ---
 
@@ -196,13 +209,14 @@ margin: 0 0 0">
     <br>As corresponding author: <strong>6</strong>
 	<br>Impact factor > 10 : <strong>2 </strong>(&#x2B50;&#x2B50;)
 	<br>Impact factor 4&#x2013;10 : <strong>11 </strong>(&#x2B50;)
-    <br>Total citation: <strong>2010</strong> / H-index: <strong>19</strong>
+    <br>Total citation: <strong>2100</strong> / H-index: <strong>19</strong>
 </span>
 </div>
 
+
 1. Zhu QC, Li S, Yuan LX, Chen RA, Liu DX, **Fung TS**. Induction of the proinflammatory chemokine interleukin-8 Is regulated by integrated stress response and AP-1 family proteins activated during coronavirus Infection. ***Int J Mol Sci***. 2021;22(11):5646. [**<u>(PDF)</u>**](/pdf/paper2021zhu.pdf)&nbsp;&#x2B50;
 
-2. **Fung TS**, Liu DX. Similarities and dissimilarities of covid-19 and other coronavirus diseases. ***Annu Rev Microbiol***. 2021(in press). [**<u>(PDF)</u>**](/pdf/paper2021fung.pdf)&nbsp;&#x2B50;&#x2B50;
+2. **Fung TS**, Liu DX. Similarities and dissimilarities of covid-19 and other coronavirus diseases. ***Annu Rev Microbiol***. 2021;75:19-47. [**<u>(PDF)</u>**](/pdf/paper2021fung.pdf)&nbsp;&#x2B50;&#x2B50;
 
 3. Yuan LX, Liang JQ, Zhu QC, Dai G, Li S, **Fung TS**\*, Liu DX\*. gammacoronavirus avian infectious bronchitis virus and alphacoronavirus porcine epidemic diarrhea virus exploit a cell-survival strategy via upregulation of cFOS to promote viral replication. ***J Virol***. 2020;95(4):e02107-20. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2020yuan.pdf)&nbsp;&#x2B50;
 
