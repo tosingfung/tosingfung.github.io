@@ -1,7 +1,7 @@
 ---
 
 layout: post
-tag: biopython-learn
+tag: python-learn
 title: "Compare/convert SeqRecord"
 ---
 
@@ -26,7 +26,7 @@ print (record1.seq == record2.seq)
 
     False
     True
-    
+
 
 ## convert GB to FASTA
 
@@ -537,8 +537,9 @@ print (record.format("fasta"))
     ACAGTGAACAATGCTAGGGAGAGCTGCCTATATGGAAGAGCCCTAATGTGTAAAATTAAT
     TTTAGTAGTGCTATCCCCATGTGATTTTAATAGCTTCTTAGGAGAATGACAAAAAAAAAA
     AAAAAAAAAAAAAAAAAAAAAAA
-    
-    
+
+
+​    
 
 ## next(SeqIO.parse()) to see first record
 
@@ -553,5 +554,4 @@ next(SeqIO.parse("sars2.gb","genbank")).annotations.keys()
 
 
     dict_keys(['molecule_type', 'topology', 'data_file_division', 'date', 'accessions', 'sequence_version', 'keywords', 'source', 'organism', 'taxonomy', 'references', 'comment', 'structured_comment'])
-
 

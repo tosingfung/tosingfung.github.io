@@ -1,13 +1,10 @@
 ---
-tag: [research-tips]
+tag: Research
 layout: post
 title: "CRISPRa/i target pick"
 ---
 
-- Broad institute CRISPR webapp
-- Addgene CRISPRi plasmid
 
-<!--more-->
 
 ## [CRISPick](https://portals.broadinstitute.org/gppx/crispick/public)
 

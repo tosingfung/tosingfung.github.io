@@ -1,13 +1,10 @@
 ---
-tag: [research-tips]
+tag: Research
 layout: post
 title: "lentivirus protocol and capacity"
 ---
 
-- Simplified lentivirus protocol
-- Cloning/packaging capacity
 
-<!--more-->
 
 ## A simplified lentivirus protocol
 

@@ -1,12 +1,10 @@
 ---
 layout: post
-tag: [html-learn]
-title: "HTML elements"
+tag: HTML
+title: Less common HTML elements
 ---
 
-- Less common HTML elements
 
-<!--more-->
 
 ## Miscellaneous
 
@@ -77,4 +75,3 @@ This is a multiline long quote.<br/>
 It contains three lines in total.<br/>
 Each line is ended with linebreak.<br/>
 </blockquote>
-

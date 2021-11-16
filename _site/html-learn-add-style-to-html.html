@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Add style to HTML</title>
+  <title>Add CSS style to HTML</title>
   <meta name="description" content="">
   <link rel="canonical" href="http://localhost:4000/html-learn-add-style-to-html">
   <link rel="alternate" type="application/rss+xml" title="Martin Fung&#39;s Page Feed"
     href="http://localhost:4000/feed.xml">
   
-  <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/favicon.png" type="image/png" />
   
   <!-- Styles -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%7CNoto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
     
     
     <span>|</span>
-    <a style="padding: 0 0.5em 0" class="" href="/tags">Blog</a>
+    <a style="padding: 0 0.5em 0" class="" href="/tags/">Blog</a>
     
     
     
@@ -44,18 +44,40 @@
   <article class="post">
     <header class="post-header">
       <time class="post-date" datetime="2021-06-18">June 18, 2021 / Friday</time>
-      <h1 class="post-title">Add style to HTML</h1>
+      <h1 class="post-title">Add CSS style to HTML</h1>
       <div class="post-meta">
-        <span class="post-tags">Tags: <a href="/tags/#html-learn" rel="tag">html-learn</a></span>
+        <span class="post-tags">Tags: <a href="/tags/#HTML" rel="tag">HTML</a></span>
       </div><!-- .post-meta -->
       
     </header><!-- .post-header -->
     <div class="post-content">
-      <ul>
-  <li>3 ways to add styles</li>
-</ul>
+      <h2 id="enforce-a-style-to-element">Enforce a style to element</h2>
 
-<!--more-->
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">"
+padding: 0;
+margin: 0;
+background-color: #ddd;
+color: #003151;
+font-family: roboto, arial, sans-serif;
+font-size: 2em;
+font-weight: bold;
+font-style: italic;
+line-height: 1.2;
+text-align: center;
+text-decoration: underline;"</span><span class="nt">&gt;</span>
+heading1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
 
 <h2 id="external-css-file">External .css file</h2>
 
@@ -120,43 +142,15 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<h2 id="enforce-a-style-to-element">Enforce a style to element</h2>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-
-<span class="nt">&lt;body&gt;</span>
-<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">"
-padding: 0;
-margin: 0;
-background-color: #ddd;
-color: #003151;
-font-family: roboto, arial, sans-serif;
-font-size: 2em;
-font-weight: bold;
-font-style: italic;
-line-height: 1.2;
-text-align: center;
-text-decoration: underline;"</span><span class="nt">&gt;</span>
-heading1<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
 
     </div><!-- .post-content -->
     <div style="margin-top: 3em"></div>
     <div class="post-meta">
-      <span class="post-tags">Tags: <a href="/tags/#html-learn" rel="tag">html-learn</a></span>
+      <span class="post-tags">Tags: <a href="/tags/#HTML" rel="tag">HTML</a></span>
     </div><!-- .post-meta -->
   </article><!-- .post -->
 
-  <div align="right"><a href="#page">&#x2B71 Back to top</a></div>
+  <div align="right"><a href="#page">Back to top</a></div>
   <div style="margin-top: 3em"></div>
 
 </main><!-- .main-content -->

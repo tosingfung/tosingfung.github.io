@@ -1,14 +1,10 @@
 ---
 layout: post
-tag: [html-learn]
-title: "HTML anchor image table"
+tag: HTML
+title: Anchor, image and table
 ---
 
-- Anchor(a) name and href
-- Img src
-- table, tr, th, td, colspan, rowspan
 
-<!--more-->
 
 ## Start a new window to open link
 
@@ -35,7 +31,7 @@ title: "HTML anchor image table"
 <!-- Content of chapter 2 -->
 ```
 
-## Add image
+## Image
 
 ```html
 <p><a href=""><img src="img/sample.png" /></a></p>
@@ -43,9 +39,9 @@ title: "HTML anchor image table"
 <!-- img folder in same path as HTML -->
 ```
 
-## Add table
+## Table
 
-![image-20210618171500009](images/image-20210618171500009.png)
+![image-20210618171500009](https://raw.githubusercontent.com/tosingfung/images/master/image-20210618171500009.png)
 
 ```html
 <html>

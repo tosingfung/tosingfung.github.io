@@ -21,7 +21,7 @@ baseurl: ""
 url: ""
 
 # Favicon
-favicon: images/favicon.png
+favicon: favicon.png
 
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 google_analytics: ""

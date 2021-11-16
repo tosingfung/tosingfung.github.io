@@ -1,12 +1,40 @@
 ---
 layout: post
-tag: [html-learn]
-title: "Add style to HTML"
+tag: HTML
+title: Add CSS style to HTML
 ---
 
-- 3 ways to add styles
 
-<!--more-->
+
+## Enforce a style to element
+
+```html
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+<h1 style="
+padding: 0;
+margin: 0;
+background-color: #ddd;
+color: #003151;
+font-family: roboto, arial, sans-serif;
+font-size: 2em;
+font-weight: bold;
+font-style: italic;
+line-height: 1.2;
+text-align: center;
+text-decoration: underline;">
+heading1</h1>
+</body>
+
+</html>
+```
+
 
 ## External .css file
 
@@ -74,32 +102,5 @@ text-decoration: underline;
 </html>
 ```
 
-## Enforce a style to element
 
-```html
-
-<!DOCTYPE html>
-<html>
-
-<head>
-</head>
-
-<body>
-<h1 style="
-padding: 0;
-margin: 0;
-background-color: #ddd;
-color: #003151;
-font-family: roboto, arial, sans-serif;
-font-size: 2em;
-font-weight: bold;
-font-style: italic;
-line-height: 1.2;
-text-align: center;
-text-decoration: underline;">
-heading1</h1>
-</body>
-
-</html>
-```
 

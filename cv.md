@@ -13,14 +13,32 @@ permalink: /cv
 	<br><a href="/cv-cn">中文版本</a> 
 </span>
 </div>
+<br><a href="#basic">Basic Information</a>
+<br><a href="#work">Work Experience</a>
+<br><a href="#education">Education</a>
+<br><a href="#language">Language Proficiency</a>
+<br><a href="#IT">IT proficiency</a>
+<br><a href="#teaching">Teaching Experience</a>
+<br><a href="#research">Research Direction</a>
+<br><a href="#grant">Research Grant</a>
+<br><a href="#paper">Research Paper</a>
+<br><a href="#book">Book Chapter</a>
+<br><a href="#conference">Conference</a>
+<br><a href="#pattern">Pattern</a>
+<br><a href="#award">Award & Honor</a>
 
+---
 
-## Basic Information
+<h2><a name="basic">Basic Information</a></h2>
 
 - Name: To Sing Fung (Martin)
 - Nationality: China (Hong Kong)
 
-## Work Experience
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="work">Work Experience</a></h2>
 
 - **Associate Professor**  
   2017.6 – 2021.6  
@@ -40,7 +58,11 @@ permalink: /cv
   Nanyang Technological University  
   Singapore
 
-## Education
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="education">Education</a></h2>
 
 - **Doctor of Philosophy (PhD)**  
   2011.1 – 2015.1  
@@ -66,7 +88,11 @@ permalink: /cv
   University of Western Ontario  
   London, Canada
 
-## Language Proficiency
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="language">Language Proficiency</a></h2>
 
 - Fluent English  
   TOEFL: 115 / 120  
@@ -74,20 +100,32 @@ permalink: /cv
 - Native Cantonese
 - Fluent Mandarin
 
-## IT Proficiency
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="IT">IT proficiency</a></h2>
 
 - Experienced user of Microsoft Office, Adobe Illustrator, Photoshop and Dreamweaver
 - Advanced user of Graphpad Prism, ImageJ, Snapgene and other biological software
 - Intermediate static web design (HTML5/CSS3)
 - Basic Python and BioPython
 
-## Teaching Experience
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="teaching">Teaching Experience</a></h2>
 
 - Supervised and co-supervised more than 40 BSc, MSc and PhD students
 - Lecturer of graduate course *Molecular Virology (English)* for 3 years
 - More than 1000 hours as Teaching Assistant during PhD/Post-doc
 
-## Research Direction
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="research">Research Directions</a></h2>
 
 - Coronavirus biology
   - Ion channel proteins (viroporins)
@@ -102,7 +140,11 @@ permalink: /cv
   - Reporter viruses and viral vectors
   - Recombinant vaccine candidates
 
-## Research Grant
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="grant">Research Grant</a></h2>
 
 <div
 style="
@@ -135,7 +177,11 @@ margin: 0 0 0">
    2018-2019, ¥10,000 (bonus)  
    2017-2018, ¥200,000 (Start-up) 
 
-## Research Paper
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="paper">Research Paper</a></h2>
 
 <div
 style="
@@ -204,15 +250,23 @@ margin: 0 0 0">
 
 25. Liao Y\#, **Fung TS**\#, Huang M, Fang SG, Zhong Y, Liu DX. Upregulation of CHOP/GADD153 during coronavirus infectious bronchitis virus infection modulates apoptosis by restricting activation of the extracellular signal-regulated kinase pathway. ***J Virol***. 2013;87(14):8124-34. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2013liao.pdf)&nbsp;&#x2B50;
 
-## Book Chapter
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="book">Book Chapter</a></h2>
 
 1. Liu DX, Ng YL, **Fung TS**, "Coronaviruses as Vaccine Vector for Veterinary Pathogens". In Viral Vectors in Veterinary Vaccine Development – A Textbook (pp. 149-168). 2021. Switzerland: Springer International Publishing AG. [**<u>(PDF)</u>**](/pdf/book2021.pdf)
 
 2. Liu DX, Liang JQ, **Fung TS**, "HCoV-229E, -NL63, -OC43, and -HKU1" In Encyclopedia of Virology 4th edition. 2020. US: Elsevier Inc. [**<u>(PDF)</u>**](/pdf/book2020.pdf)
 
-3. Liu DX, Ng YL, **Fung TS**, "Infectious Bronchitis Virus". In Avian Virology: Current Research and Future Trends (pp. 129-174). 2019. UK: Caister Academic.
+3. Liu DX, Ng YL, **Fung TS**, "Infectious Bronchitis Virus". In Avian Virology: Current Research and Future Trends (pp. 129-174). 2019. UK: Caister Academic. [**<u>(PDF)</u>**](/pdf/book2019.pdf)
 
-## Conference
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="conference">Conference</a></h2>
 
 1. **Fung TS** and Liu DX. Speaker. Ion channel activity of coronavirus envelope protein regulates viral replication and pathogenesis. Frontiers in Microbiology International Symposium. 2018. Guangzhou, China.
 
@@ -222,7 +276,11 @@ margin: 0 0 0">
 
 4. **Fung TS**, Liao Y, Huang M, Liu DX. Speaker. The ER stress sensor IRE1 protects cells from apoptosis induced by coronavirus infectious bronchitis virus. XIIIth International Nidovirus Symposium. 2014, Salamanca, Spain.
 
-## Pattern
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="pattern">Pattern</a></h2>
 
 1. 中国发明专利；利用K1E噬菌体RNA聚合酶和启动子的双质粒系统在真核细胞表达病毒蛋白的方法；冯涛声, 刘定祥, 李淑敏, 丘祖纯；申请号：202011145191.2
 
@@ -234,7 +292,11 @@ margin: 0 0 0">
 
 5. 中国发明专利；一株M蛋白糖基化位点突变的传染性支气管炎病毒及其制备方法与应用；刘定祥, 冯涛声, 陈瑞爱, 梁佳琪, 李延鹏, 李淑敏, 袁丽霞, 朱庆春, 罗琼, 熊廷；申请号：201811389187.3
 
-## Award & Honor
+<div style="text-align:right"><a href="#page">Back to top</a></div>
+
+---
+
+<h2><a name="award">Award & Honor</a></h2>
 
 - **Nanyang Technological University**
   - Full-Tuition Scholarship (4 years)
