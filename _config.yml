@@ -31,7 +31,7 @@ navigation:
   - text: Blog
     url: /tags/
   - text: CV
-    url: /cv/
+    url: /cv
 
 # The shortname for your Disqus site to enable comments.
 disqus:
