@@ -27,10 +27,9 @@ As a layman of the coding world, I come across GitHub from time to time when sea
 
 3. In the **Setting** tab of that repository, go to **Page**, and click **Change theme**. Choose any one theme. Two files will be automatically generated:
 
-   > _config.yml
+   > _config.yml<br>index.md
    >
-   > index.md
-
+   
 4. Open `index.md` by clicking **Edit this file**. 
 
 5. Now you can write the page in markdown format. But it will be much easier to first write in any markdown editor (such as Typora), then paste the content here. Remember to click **commit changes** when you're done.
