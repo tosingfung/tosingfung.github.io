@@ -282,13 +282,13 @@ margin: 0 0 0">
 
 <h2><a name="conference">Conference</a></h2>
 
-1. **Fung TS** and Liu DX. Speaker. Ion channel activity of coronavirus envelope protein regulates viral replication and pathogenesis. Frontiers in Microbiology International Symposium. 2018. Guangzhou, China.
+1. (Oral) **Fung TS** and Liu DX. Ion channel activity of coronavirus envelope protein regulates viral replication and pathogenesis. Frontiers in Microbiology International Symposium. 2018. Guangzhou, China.
 
-2. **Fung TS**. Speaker. Activation of JNK pathway by coronavirus infectious bronchitis virus promotes apoptosis. 1st National Conference of Signal Communication and Pathogenesis in Microbes. 2017. Guangzhou, China. 
+2. (Oral) **Fung TS**. Activation of JNK pathway by coronavirus infectious bronchitis virus promotes apoptosis. 1st National Conference of Signal Communication and Pathogenesis in Microbes. 2017. Guangzhou, China. 
 
-3. **Fung TS** and Luo Q. Poster presentation. Studying important human disease using fluorescence-based biosensors. 12th "five-years" Science and Technology Innovation Exhibition. 2016. Macau, China.
+3. (Poster) **Fung TS** and Luo Q. Studying important human disease using fluorescence-based biosensors. 12th "five-years" Science and Technology Innovation Exhibition. 2016. Macau, China.
 
-4. **Fung TS**, Liao Y, Huang M, Liu DX. Speaker. The ER stress sensor IRE1 protects cells from apoptosis induced by coronavirus infectious bronchitis virus. XIIIth International Nidovirus Symposium. 2014, Salamanca, Spain.
+4. (Oral) **Fung TS**, Liao Y, Huang M, Liu DX. The ER stress sensor IRE1 protects cells from apoptosis induced by coronavirus infectious bronchitis virus. XIIIth International Nidovirus Symposium. 2014, Salamanca, Spain.
 
 <div style="text-align:right"><a href="#page">Back to top</a></div>
 
