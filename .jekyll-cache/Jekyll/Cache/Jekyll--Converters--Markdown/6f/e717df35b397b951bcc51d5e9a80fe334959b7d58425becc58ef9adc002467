@@ -1,0 +1,34 @@
+I""<ul>
+  <li>Simplified lentivirus protocol</li>
+  <li>Cloning/packaging capacity</li>
+</ul>
+
+<!--more-->
+
+<h2 id="a-simplified-lentivirus-protocol">A simplified lentivirus protocol</h2>
+
+<ol>
+  <li>Plate HEK293T, 12-well plate</li>
+  <li>Transfect:
+    <ul>
+      <li>0.50 μg psPAX2</li>
+      <li>0.25 μg pMD2.G</li>
+      <li>1.25 μg pLVX</li>
+    </ul>
+  </li>
+  <li>Change 550 μl DMEM / 10% FBS</li>
+  <li>48 hpt, harvest sp, keep 4 degree</li>
+  <li>Add 550 μl DMEM / 10% FBS</li>
+  <li>72 hpt, harvest and pool</li>
+  <li>Spin down, aliquot, -80 degree</li>
+  <li>Transduction (12-well plate)</li>
+  <li>Use 100-300 μl lentivirus</li>
+  <li>Change medium (optional)</li>
+  <li>Harvest after 48-72 h</li>
+</ol>
+
+<h2 id="cloningpackaging-capacity">Cloning/packaging capacity</h2>
+
+<p>Wild-type lentiviruses contain ~9.7 kb of genome including both LTRs. <strong>Artificially creating a genome larger than this will result in unstable viral particles and a dramatic drop in viral titer</strong>. For recombinant lentiviruses such as those generated using Lenti-X systems, much of the viral genome has been replaced with other useful sequences such as selection markers or fluorescent proteins, but enough space remains for cloning transgenes. Since each pLVX vector contains different useful sequences, the available space for cloning your transgene varies. To determine the maximum recommended transgene size, consult your pLVX vector map and determine the position of the end of the 3’ LTR (the end of the 5’ LTR is always at position 1), then subtract that from 9.7 kb. For example: the 3’ LTR of pLVX-Puro ends at 5.4 kb, so ~4.3 kb of space remains for you to clone in your gene (<a href="https://www.takarabio.com/learning-centers/gene-function/viral-transduction/lentivirus/lenti-x-faqs">source</a>)</p>
+
+:ET

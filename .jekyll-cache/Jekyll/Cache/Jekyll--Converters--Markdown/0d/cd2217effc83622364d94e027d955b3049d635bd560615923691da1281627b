@@ -1,0 +1,144 @@
+I"�$<ul>
+  <li>record = SeqIO.read()</li>
+  <li><strong>SeqRecord Object</strong></li>
+  <li>record.id</li>
+  <li>record.name</li>
+  <li>record.description</li>
+  <li>record.annotations (dic)</li>
+  <li>record.annotations[‘source’]</li>
+  <li>record.features (list)</li>
+  <li><strong>SeqFeature Object</strong></li>
+  <li>feature.type</li>
+  <li>feature.location</li>
+  <li>feature.location.extract(record.seq)</li>
+  <li><strong>.type = “CDS”</strong></li>
+  <li>feature.qualifiers (dic)</li>
+  <li>feature.qualifiers[‘protein_id’] (list)</li>
+  <li>feature.qualifiers[‘product’] (list)</li>
+  <li>feature.qualifiers[‘translation’] (list)</li>
+</ul>
+
+<!--more-->
+
+<h2 id="seqrecord-obj-from-fasta">SeqRecord obj from FASTA</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="s">"ibv.fasta"</span><span class="p">,</span><span class="s">"fasta"</span><span class="p">)</span>
+<span class="c1"># SeqIO.read() for only one record
+# SeqIO.parse() for all the records
+</span><span class="n">record</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SeqRecord(seq=Seq('ACTTAAGATAGATATTAATATATATCTATTATACTAGCCTTGCGCTAGATTTTT...GCA'), id='DQ001339.1', name='DQ001339.1', description='DQ001339.1 Avian infectious bronchitis virus isolate IBV-p65, complete genome', dbxrefs=[])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="s">"ibv.fasta"</span><span class="p">,</span><span class="s">"fasta"</span><span class="p">)</span>
+<span class="n">record</span><span class="p">.</span><span class="n">description</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'DQ001339.1 Avian infectious bronchitis virus isolate IBV-p65, complete genome'
+</code></pre></div></div>
+
+<h2 id="seqrecord-obj-from-genbank">SeqRecord obj from GenBank</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="s">"sars2.gb"</span><span class="p">,</span><span class="s">"genbank"</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="nb">id</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">description</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">seq</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NC_045512.2
+NC_045512
+Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, complete genome
+29903
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="s">"sars2.gb"</span><span class="p">,</span><span class="s">"genbank"</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">annotations</span><span class="p">))</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">annotations</span><span class="p">[</span><span class="s">"source"</span><span class="p">])</span>
+<span class="c1"># return the annotations dictionary
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>13
+Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="s">"sars2.gb"</span><span class="p">,</span><span class="s">"genbank"</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">features</span><span class="p">))</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">features</span><span class="p">)</span>
+<span class="c1"># return a list of SeqFeature object
+</span></code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="s">"sars2.gb"</span><span class="p">,</span><span class="s">"genbank"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="p">.</span><span class="n">features</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="sa">f</span><span class="s">"""</span><span class="se">\
+</span><span class="s">    </span><span class="si">{</span><span class="n">feature</span><span class="p">.</span><span class="nb">type</span><span class="si">}</span><span class="s">,</span><span class="si">{</span><span class="n">feature</span><span class="p">.</span><span class="n">location</span><span class="si">}</span><span class="se">\
+</span><span class="s">    """</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    source,[0:29903](+)    
+    5'UTR,[0:265](+)    
+    gene,[265:21555](+)    
+    CDS,join{[265:13468](+), [13467:21555](+)}    
+    mat_peptide,[265:805](+)    
+    mat_peptide,[805:2719](+)    
+    mat_peptide,[2719:8554](+)    
+    mat_peptide,[8554:10054](+)    
+    mat_peptide,[10054:10972](+)    
+    mat_peptide,[10972:11842](+)    
+    mat_peptide,[11842:12091](+)    
+    mat_peptide,[12091:12685](+)    
+    mat_peptide,[12685:13024](+)    
+    mat_peptide,[13024:13441](+)    
+    mat_peptide,join{[13441:13468](+), [13467:16236](+)}    
+    mat_peptide,[16236:18039](+)    
+    mat_peptide,[18039:19620](+)    
+    mat_peptide,[19620:20658](+)    
+    mat_peptide,[20658:21552](+)    
+    CDS,[265:13483](+)    
+    mat_peptide,[265:805](+)    
+    mat_peptide,[805:2719](+)    
+    mat_peptide,[2719:8554](+)    
+    mat_peptide,[8554:10054](+)    
+    mat_peptide,[10054:10972](+)    
+    mat_peptide,[10972:11842](+)    
+    mat_peptide,[11842:12091](+)    
+    mat_peptide,[12091:12685](+)    
+    mat_peptide,[12685:13024](+)    
+    mat_peptide,[13024:13441](+)    
+    mat_peptide,[13441:13480](+)    
+    stem_loop,[13475:13503](+)    
+    stem_loop,[13487:13542](+)    
+    gene,[21562:25384](+)    
+    CDS,[21562:25384](+)    
+    gene,[25392:26220](+)    
+    CDS,[25392:26220](+)    
+    gene,[26244:26472](+)    
+    CDS,[26244:26472](+)    
+    gene,[26522:27191](+)    
+    CDS,[26522:27191](+)    
+    gene,[27201:27387](+)    
+    CDS,[27201:27387](+)    
+    gene,[27393:27759](+)    
+    CDS,[27393:27759](+)    
+    gene,[27755:27887](+)    
+    CDS,[27755:27887](+)    
+    gene,[27893:28259](+)    
+    CDS,[27893:28259](+)    
+    gene,[28273:29533](+)    
+    CDS,[28273:29533](+)    
+    gene,[29557:29674](+)    
+    CDS,[29557:29674](+)    
+    stem_loop,[29608:29644](+)    
+    stem_loop,[29628:29657](+)    
+    3'UTR,[29674:29903](+)    
+    stem_loop,[29727:29768](+)    
+</code></pre></div></div>
+
+:ET

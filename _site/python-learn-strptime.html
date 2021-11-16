@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>convert str to datetime object</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="http://localhost:4000/python-learn-strptime">
+  <link rel="alternate" type="application/rss+xml" title="Martin Fung&#39;s Page Feed"
+    href="http://localhost:4000/feed.xml">
+  
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+  
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%7CNoto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="page" class="site">
+    <div class="inner">
+      <h1 style="text-align: center; padding: 1em 0 0.3em">
+<a class="logo-text" href="/">Martin Fung's Page</a>
+</h1>
+
+<h2 style="text-align: center; margin: 0">
+    
+    
+    
+    <span>|</span>
+    <a style="padding: 0 0.5em 0" class="" href="/tags">Blog</a>
+    
+    
+    
+    <span>|</span>
+    <a style="padding: 0 0.5em 0" class="" href="/cv">CV</a>
+    
+    <span>|</span>
+</h2>
+<hr>
+
+      <main class="main-content fadeInDown delay_075s">
+
+  <article class="post">
+    <header class="post-header">
+      <time class="post-date" datetime="2021-06-15">June 15, 2021 / Tuesday</time>
+      <h1 class="post-title">convert str to datetime object</h1>
+      <div class="post-meta">
+        <span class="post-tags">Tags: <a href="/tags/#python-learn" rel="tag">python-learn</a></span>
+      </div><!-- .post-meta -->
+      
+    </header><!-- .post-header -->
+    <div class="post-content">
+      <ul>
+  <li>datetime.datetime.strptime()</li>
+</ul>
+
+<!--more-->
+
+<h2 id="string-to-datetime-object">String to datetime object</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="n">bday</span> <span class="o">=</span> <span class="s">"04:30:00 Thursday July 9, 1987"</span>
+<span class="n">dt_bday</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">bday</span><span class="p">,</span> <span class="s">"%H:%M:%S %A %B %d, %Y"</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dt_bday</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1987-07-09 04:30:00
+</code></pre></div></div>
+
+<h2 id="split-a-long-fstring-code">split a long fstring code</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="s">"s-1"</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s">"s-2"</span>
+<span class="n">c</span> <span class="o">=</span> <span class="s">"s-3"</span>
+
+<span class="n">string</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"""
+| </span><span class="si">{</span><span class="n">a</span><span class="p">:</span><span class="mi">4</span><span class="si">}</span><span class="se">\
+</span><span class="s">| </span><span class="si">{</span><span class="n">b</span><span class="p">:</span><span class="mi">4</span><span class="si">}</span><span class="se">\
+</span><span class="s">| </span><span class="si">{</span><span class="n">c</span><span class="p">:</span><span class="mi">4</span><span class="si">}</span><span class="se">\
+</span><span class="s">|"""</span>
+
+<span class="k">print</span> <span class="p">(</span><span class="n">string</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| s-1 | s-2 | s-3 |
+</code></pre></div></div>
+
+
+    </div><!-- .post-content -->
+    <div style="margin-top: 3em"></div>
+    <div class="post-meta">
+      <span class="post-tags">Tags: <a href="/tags/#python-learn" rel="tag">python-learn</a></span>
+    </div><!-- .post-meta -->
+  </article><!-- .post -->
+
+  <div align="right"><a href="#page">Back to top</a></div>
+  <div style="margin-top: 3em"></div>
+
+</main><!-- .main-content -->
+      <footer class="site-footer">
+  <div class="offsite-links">
+    
+  </div><!-- .offsite-links -->
+  <div class="footer-bottom">
+    <div class="site-info">
+      <p>Copyright © 2007-21 To Sing Fung<br />Powered by Jekyll. Theme modified from Scriptor</p>
+
+    </div><!-- .site-info -->
+  </div><!-- .footer-bottom -->
+</footer><!-- .site-footer -->
+
+    </div><!-- .inner -->
+  </div><!-- .site -->
+
+
+</body>
+</html>

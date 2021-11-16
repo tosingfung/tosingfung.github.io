@@ -1,15 +1,8 @@
 ---
-title: "2007 DREAM report"
+title: 2007 DREAM report
 layout: post
-tag: undergraduate-old-stuff
+tag: undergraduate
 ---
-
-- DREAM (Dedicated Research Exchange And Mentorship) program
-- University of Western Ontario, Canada
-- Experimental report
-- Original uncorrected version
-
-<!--more-->
 
 ## Microfluidic and Microbiology
 
@@ -19,7 +12,7 @@ Student: Martin To Sing Fung<br>Supervisor: Professor Leo Lau
 
 In 2005, it was reported that pilus-like appendages are produced by Shewanella oneidensis in direct response to electron acceptor limitation. The apparent height of these appendages in scanning tunneling microscope (STM) is about 10nm, which is in consistent with scanning electron microscope (SEM) measurement, indicating that they are electrical conductive. (In STM, conducting samples should have apparent height close to actual height. If a sample feature is not conductive, the feature is invisible to STM and the apparent height should be zero. ) These appendages are thus named bacterial nanowires. When S.oneidensis is grown with silica ferrihydrite as the only electron acceptor, nanocrystalline magnetite is found arranged in linear arrays, whose dimensions consistent with nanowires.(Figure.1) It is proposed that nanowires are used to transport electrons to extracellular solid iron oxide.
 
-![dream1](/images/dream1.png)
+![dream1](https://raw.githubusercontent.com/tosingfung/images/master/dream1.png)
 
 #### Figure 1
 
@@ -29,7 +22,7 @@ Another group studied on anaerobic bacteria Geobacter sulfurreducens, which prod
 
 Using an alternative approach, we have the idea of inducing the nanowire to grow in a confined nanochannel in a microfluidic device. The design is shown in Figure.2, which is embedded between two glass slides. To save cost, two separate systems are put on one device. In each system, the large circles at top and bottom are the inlets and outlets. Thick lines are microchannels where bacteria culture or mineral solution flows through, which are about 25μm wide. The two smaller circles in the middle indicate chambers, which are not to scale. The diameter should be around 60μm. The thin lines between two chambers refer to the nanochannels, each of which is 400nm wide and deep, about 25μm long. It is slightly narrower than the diameter of S.oneidensis cells; also given the chemotaxis motion (thrust and tumble) of bacteria, it is fairly unlikely that a bacterium will flow through the nanochannels to the mineral chamber. Except for the nanochannels, the depths of all device features are 8.5μm.
 
-![dream2](/images/dream2.png)
+![dream2](https://raw.githubusercontent.com/tosingfung/images/master/dream2.png)
 
 ####  Figure 2
 
@@ -67,7 +60,7 @@ If the hypothesis stands, we expect to observe bacterial nanowires in the nanoch
 
 Figure.3 shows what a complete device looks like (A, B). 3-C illustrate the relative dimension of chambers, nanochannels and S.oneidensis cells under SEM. 3-D is the unfilled device under an optical microscope. When the microchannels and chambers are filled up, it becomes transparent, so do the nanochannels shown in the middle.
 
-![dream3](/images/dream3.png)
+![dream3](https://raw.githubusercontent.com/tosingfung/images/master/dream3.png)
 
 #### Figure 3
 
@@ -100,7 +93,7 @@ The uranyl acetate is kept in anaerobic for two days to get rid of any dissolved
 
 Glucoaldehyde is injected into the bacteria chamber to fix all the cells and cellular components. Then the device is cracked open and put in 25% ethanol. Increasing concentration of ethanol (50%, 75% and 100%) is used to gradually dehydrate the sample. The device is then transferred from 100% ethanol to critical point dryer and dried with liquid carbon dioxide. When liquid carbon dioxide completely substitutes ethanol, temperature and pressure are adjusted so that carbon dioxide reaches critical point, where liquid phase and gaseous phase are identical. Since there is no surface tension, the delicate structures are well preserved. The sample is then coated with platinum for SEM imaging. As mentioned above, coexist of bacterial nanowire and reduce uranium is a strong evidence to support the hypothesis. But the dimension of nanowires are too small to identify using SEM. Alternatively, we can use TOF-SIMs to analyze elemental composition of the nanochannel. Since cytochromes play an important role in electron transport, they are believed to be major conductive component of bacterial nanowires. Cytochromes are heme-bound proteins, thus coexist of iron and uranium in the nanochannel will be a good indication. Unfortunately, we don’t have enough time to do this on a cracked device.
 
-![dream4](/images/dream4.png)
+![dream4](https://raw.githubusercontent.com/tosingfung/images/master/dream4.png)
 
 #### Figure 4
 

@@ -1,0 +1,36 @@
+I"	<ul>
+  <li>datetime.datetime.strptime()</li>
+</ul>
+
+<!--more-->
+
+<h2 id="string-to-datetime-object">String to datetime object</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="n">bday</span> <span class="o">=</span> <span class="s">"04:30:00 Thursday July 9, 1987"</span>
+<span class="n">dt_bday</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">bday</span><span class="p">,</span> <span class="s">"%H:%M:%S %A %B %d, %Y"</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dt_bday</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1987-07-09 04:30:00
+</code></pre></div></div>
+
+<h2 id="split-a-long-fstring-code">split a long fstring code</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="s">"s-1"</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s">"s-2"</span>
+<span class="n">c</span> <span class="o">=</span> <span class="s">"s-3"</span>
+
+<span class="n">string</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"""
+| </span><span class="si">{</span><span class="n">a</span><span class="p">:</span><span class="mi">4</span><span class="si">}</span><span class="se">\
+</span><span class="s">| </span><span class="si">{</span><span class="n">b</span><span class="p">:</span><span class="mi">4</span><span class="si">}</span><span class="se">\
+</span><span class="s">| </span><span class="si">{</span><span class="n">c</span><span class="p">:</span><span class="mi">4</span><span class="si">}</span><span class="se">\
+</span><span class="s">|"""</span>
+
+<span class="k">print</span> <span class="p">(</span><span class="n">string</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| s-1 | s-2 | s-3 |
+</code></pre></div></div>
+
+:ET

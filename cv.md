@@ -1,11 +1,11 @@
 ---
-layout: pagenoheadfoot
+layout: page
 title: "Curriculum Vitae"
 permalink: /cv
 
 ---
 
-<h1 align="center" style="padding-top: 1em">Curriculum Vitae</h1>
+<h1 align="center">Curriculum Vitae</h1>
 
 <div align="right">
 <span>

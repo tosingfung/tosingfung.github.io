@@ -1,0 +1,133 @@
+I"™)<ul>
+  <li>datetime.date(y,m,d)</li>
+  <li>datetime.date.today()</li>
+  <li>datetime.time(H,M,S)</li>
+  <li>datetime.datetime.(y,m,d,H,M,S)</li>
+  <li>datetime.datetime.now()</li>
+  <li>datetime.datetime.utcnow()</li>
+  <li>datetime.timedelta(days=?)</li>
+  <li>dateutil.tz.gettz()</li>
+</ul>
+
+<!--more-->
+
+<h2 id="datetimedateymd">datetime.date(y,m,d)</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+<span class="c1"># date.today()
+</span><span class="n">bday</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="mi">1981</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="sa">f</span><span class="s">"""
+%Y: </span><span class="si">{</span><span class="n">bday</span><span class="p">:</span><span class="o">%</span><span class="n">Y</span><span class="si">}</span><span class="s">
+%y: </span><span class="si">{</span><span class="n">bday</span><span class="p">:</span><span class="o">%</span><span class="n">y</span><span class="si">}</span><span class="s">
+--------------------
+%m: </span><span class="si">{</span><span class="n">bday</span><span class="p">:</span><span class="o">%</span><span class="n">m</span><span class="si">}</span><span class="s">
+%B: </span><span class="si">{</span><span class="n">bday</span><span class="p">:</span><span class="o">%</span><span class="n">B</span><span class="si">}</span><span class="s">
+%b: </span><span class="si">{</span><span class="n">bday</span><span class="p">:</span><span class="o">%</span><span class="n">b</span><span class="si">}</span><span class="s">
+--------------------
+%d: </span><span class="si">{</span><span class="n">bday</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="si">}</span><span class="s">
+--------------------
+%A: </span><span class="si">{</span><span class="n">bday</span><span class="p">:</span><span class="o">%</span><span class="n">A</span><span class="si">}</span><span class="s">
+%a: </span><span class="si">{</span><span class="n">bday</span><span class="p">:</span><span class="o">%</span><span class="n">a</span><span class="si">}</span><span class="s">
+"""</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%Y: 1981
+%y: 81
+--------------------
+%m: 09
+%B: September
+%b: Sep
+--------------------
+%d: 05
+--------------------
+%A: Saturday
+%a: Sat
+</code></pre></div></div>
+
+<h2 id="datetimetimehms">datetime.time(H,M,S)</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">time</span>
+<span class="n">teatime</span> <span class="o">=</span> <span class="n">time</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">35</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="sa">f</span><span class="s">"""
+%H-%M-%S: </span><span class="si">{</span><span class="n">teatime</span><span class="p">:</span><span class="o">%</span><span class="n">H</span><span class="o">-%</span><span class="n">M</span><span class="o">-%</span><span class="n">S</span><span class="si">}</span><span class="s">
+%I:%M %p: </span><span class="si">{</span><span class="n">teatime</span><span class="p">:</span><span class="o">%</span><span class="n">I</span><span class="p">:</span><span class="o">%</span><span class="n">M</span> <span class="o">%</span><span class="n">p</span><span class="si">}</span><span class="s">
+"""</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%H-%M-%S: 15-25-35
+%I:%M %p: 03:25 PM
+</code></pre></div></div>
+
+<h2 id="datetimedatetimeymdhms">datetime.datetime(y,m,d,H,M,S)</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="c1"># datetime.now()
+</span><span class="n">bomb</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2080</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">bomb</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2080-01-01 00:00:00
+</code></pre></div></div>
+
+<h2 id="datetimedatetimenow">datetime.datetime.now()</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="n">bomb</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2080</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">tick</span> <span class="o">=</span> <span class="n">bomb</span> <span class="o">-</span> <span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">()</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">tick</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">tick</span><span class="p">.</span><span class="n">days</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">tick</span><span class="p">.</span><span class="n">days</span> <span class="o">//</span> <span class="mi">365</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>21383 days, 9:23:22.116035
+21383
+58
+</code></pre></div></div>
+
+<h2 id="datetimetimedelta">datetime.timedelta()</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="n">now</span>  <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">()</span>
+<span class="n">span</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">timedelta</span><span class="p">(</span>
+    <span class="n">weeks</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">days</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">hours</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">minutes</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="n">seconds</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1"># timedelta is under datetime
+# DO NOT: datetime.datetime.timedelta
+</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">now</span> <span class="o">+</span> <span class="n">span</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2021-06-24 17:43:40.082602
+</code></pre></div></div>
+
+<h2 id="datetimedatetimeutcnow">datetime.datetime.utcnow()</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="n">now</span>    <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">()</span>
+<span class="n">utcnow</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">utcnow</span><span class="p">()</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">utcnow</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>8:00:00
+</code></pre></div></div>
+
+<h2 id="dateutiltzgettz">dateutil.tz.gettz()</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">dateutil.tz</span> <span class="kn">import</span> <span class="n">gettz</span>
+
+<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">()</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">now</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">now</span><span class="p">.</span><span class="n">astimezone</span><span class="p">(</span><span class="n">gettz</span><span class="p">(</span><span class="s">"Europe/London"</span><span class="p">)))</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">now</span><span class="p">.</span><span class="n">astimezone</span><span class="p">(</span><span class="n">gettz</span><span class="p">(</span><span class="s">"America/Toronto"</span><span class="p">)))</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2021-06-15 14:43:22.346340
+2021-06-15 07:43:22.346340+01:00
+2021-06-15 02:43:22.346340-04:00
+</code></pre></div></div>
+
+:ET

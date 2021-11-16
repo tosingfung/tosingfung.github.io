@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add overhang to oligo</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="http://localhost:4000/python-script-add-overhang-to-oligo">
+  <link rel="alternate" type="application/rss+xml" title="Martin Fung&#39;s Page Feed"
+    href="http://localhost:4000/feed.xml">
+  
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+  
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%7CNoto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="page" class="site">
+    <div class="inner">
+      <h1 style="text-align: center; padding: 1em 0 0.3em">
+<a class="logo-text" href="/">Martin Fung's Page</a>
+</h1>
+
+<h2 style="text-align: center; margin: 0">
+    
+    
+    
+    <span>|</span>
+    <a style="padding: 0 0.5em 0" class="" href="/tags">Blog</a>
+    
+    
+    
+    <span>|</span>
+    <a style="padding: 0 0.5em 0" class="" href="/cv">CV</a>
+    
+    <span>|</span>
+</h2>
+<hr>
+
+      <main class="main-content fadeInDown delay_075s">
+
+  <article class="post">
+    <header class="post-header">
+      <time class="post-date" datetime="2021-06-17">June 17, 2021 / Thursday</time>
+      <h1 class="post-title">Add overhang to oligo</h1>
+      <div class="post-meta">
+        <span class="post-tags">Tags: <a href="/tags/#python-script" rel="tag">python-script</a></span>
+      </div><!-- .post-meta -->
+      
+    </header><!-- .post-header -->
+    <div class="post-content">
+      <ul>
+  <li>Input multiple targeting sequence</li>
+  <li>Return lentiCRISPRv2 cloning oligos</li>
+</ul>
+
+<!--more-->
+
+<h2 id="script">script</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sgRNA</span><span class="p">(</span><span class="n">target</span><span class="p">):</span>
+    <span class="n">dna</span> <span class="o">=</span> <span class="n">target</span><span class="p">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="n">rev</span> <span class="o">=</span> <span class="n">target</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">rev_comp</span> <span class="o">=</span> <span class="n">rev</span>\
+    <span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"a"</span><span class="p">,</span><span class="s">"T"</span><span class="p">)</span>\
+    <span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"t"</span><span class="p">,</span><span class="s">"A"</span><span class="p">)</span>\
+    <span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"g"</span><span class="p">,</span><span class="s">"C"</span><span class="p">)</span>\
+    <span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"c"</span><span class="p">,</span><span class="s">"G"</span><span class="p">).</span><span class="n">lower</span><span class="p">()</span>
+    <span class="k">return</span> <span class="p">[</span><span class="sa">f</span><span class="s">"CACCG</span><span class="si">{</span><span class="n">target</span><span class="si">}</span><span class="s">"</span><span class="p">,</span><span class="sa">f</span><span class="s">"AAAC</span><span class="si">{</span><span class="n">rev_comp</span><span class="si">}</span><span class="s">C"</span><span class="p">]</span>
+    <span class="c1"># return a list [sense, antisense]
+</span>
+<span class="n">fh_input</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"target.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"sgRNA.csv"</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh_output</span><span class="p">:</span>
+    <span class="n">fh_output</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"target,sense,antisense</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+    <span class="c1"># remember to add \n after the first line
+</span>    
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fh_input</span><span class="p">:</span>
+        <span class="n">target</span> <span class="o">=</span> <span class="n">line</span><span class="p">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="c1"># remember to strip the \n
+</span>        
+        <span class="n">sense</span> <span class="o">=</span> <span class="n">sgRNA</span><span class="p">(</span><span class="n">target</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">antisense</span> <span class="o">=</span> <span class="n">sgRNA</span><span class="p">(</span><span class="n">target</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+        
+        <span class="n">fh_output</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">target</span><span class="si">}</span><span class="s">,</span><span class="si">{</span><span class="n">sense</span><span class="si">}</span><span class="s">,</span><span class="si">{</span><span class="n">antisense</span><span class="si">}</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+        
+<span class="n">fh_input</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+<span class="c1"># remember to close the handle
+</span></code></pre></div></div>
+
+<h2 id="targettxt">target.txt</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctatggcggtcaatatggtg
+tgttccacagtatgtccatg
+tctcataacccggttgccga
+ggctggacaatcatcagaat
+tcgtgaatatcactagcggt
+</code></pre></div></div>
+
+<h2 id="sgrnacsv">sgRNA.csv</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>target,sense,antisense
+ctatggcggtcaatatggtg,CACCGctatggcggtcaatatggtg,AAACcaccatattgaccgccatagC
+tgttccacagtatgtccatg,CACCGtgttccacagtatgtccatg,AAACcatggacatactgtggaacaC
+tctcataacccggttgccga,CACCGtctcataacccggttgccga,AAACtcggcaaccgggttatgagaC
+ggctggacaatcatcagaat,CACCGggctggacaatcatcagaat,AAACattctgatgattgtccagccC
+tcgtgaatatcactagcggt,CACCGtcgtgaatatcactagcggt,AAACaccgctagtgatattcacgaC
+</code></pre></div></div>
+
+    </div><!-- .post-content -->
+    <div style="margin-top: 3em"></div>
+    <div class="post-meta">
+      <span class="post-tags">Tags: <a href="/tags/#python-script" rel="tag">python-script</a></span>
+    </div><!-- .post-meta -->
+  </article><!-- .post -->
+
+  <div align="right"><a href="#page">Back to top</a></div>
+  <div style="margin-top: 3em"></div>
+
+</main><!-- .main-content -->
+      <footer class="site-footer">
+  <div class="offsite-links">
+    
+  </div><!-- .offsite-links -->
+  <div class="footer-bottom">
+    <div class="site-info">
+      <p>Copyright © 2007-21 To Sing Fung<br />Powered by Jekyll. Theme modified from Scriptor</p>
+
+    </div><!-- .site-info -->
+  </div><!-- .footer-bottom -->
+</footer><!-- .site-footer -->
+
+    </div><!-- .inner -->
+  </div><!-- .site -->
+
+
+</body>
+</html>

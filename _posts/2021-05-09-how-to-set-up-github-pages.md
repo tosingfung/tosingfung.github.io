@@ -1,16 +1,12 @@
 ---
-title: "Set up a GitHub page"
+title: Setting up a simple GitHub Page
 layout: post
-tag: jekyll
+tag: GitHub page
 ---
 
-- Try out some blog platforms
-- Set up a Gibhub page repo
-- Put up a single page (.md)
 
-<!--more-->
 
-I need somewhere to put my CV. Ten years ago, I used Blogger and it got the job done well, although I did spend much time with the layout. When I checked on the pages recently, everything was perfectly preserved, including all the uploaded images. But Blogger does not adapt well in mobile devices, and as with all other Google products, you can't access it in China. But still, one thing I like very much about Blogger is the powerful search function that allows you to quickly locate a post, and that you can post blogs by sending emails...
+Recently I am trying to find somewhere to put my online CV. Ten years ago, I used Blogger and it got the job done well, although I did spend much time with the layout. When I checked on the pages recently, everything was perfectly preserved, including all the uploaded images. But Blogger does not adapt well in mobile devices, and as with all other Google products, you can't access it in China. But still, one thing I like very much about Blogger is the powerful search function that allows you to quickly locate a post, and that you can post blogs by sending emails...
 
 I also tried [Google sites](https://sites.google.com/view/tosingfung). It was very easy to use and required almost no knowledge of HTML. Compared with the Dreamweaver that I used to mess around over ten years ago, this is really a bless. The preset templates also come in handy. If a small business needs to set up a info site, it could be easily done within hours. However, I feel like that when there are more than 20 pages, it may be quite difficult to maintain. Also, I would prefer a more streamline approach to add new pages.
 
@@ -22,9 +18,25 @@ As a layman of the coding world, I come across GitHub from time to time when sea
 
 ## Set up a single page
 
-First, register a GitHub account with the user name: **tosingfung**. Create a **public** repository named: **tosingfung.github.io**  It seems you can only use this name for the repository, anything else (I tried tosingfung) would result in your page URL being tosingfung.tosingfung.github.info, which feels like a page for that that specific repository instead of a page for the account (the user). The repository is now. Next, in the **Setting** tab of that repository, go to **Page**, and click **Change theme**. Now choose any theme you like and click **Change theme**. Two files will be automatically generated:
+1. Register a GitHub account.
+   <br>I am using `tosingfung` as my username
 
-- `_config.yml`
-- `index.md`
+2. Create a **public** repository named: `tosingfung.github.io`  
 
-Open `index.md` by clicking **Edit this file**. Do not modify the YAML front matter! Now you simply need to write in markdown, for example a CV. Remember to click **Commit change**. Now people can read this single page by going to the URL **tosingfung.github.io**
+   > You must use this format, ie. `{username}.github.io`
+
+3. In the **Setting** tab of that repository, go to **Page**, and click **Change theme**. Choose any one theme. Two files will be automatically generated:
+
+   > _config.yml
+   >
+   > index.md
+
+4. Open `index.md` by clicking **Edit this file**. 
+
+5. Now you can write the page in markdown format. But it will be much easier to first write in any markdown editor (such as Typora), then paste the content here. Remember to click **commit changes** when you're done.
+
+6. This page can now be accessed by visiting https://tosingfung.github.io
+
+## What's next?
+
+Of course this will only generate a single page, which suffices when you only need to showcase your product or cv. More complicated personal or business websites can be generated with Jekyll and hosted on GitHub.

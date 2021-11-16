@@ -1,0 +1,57 @@
+I"n<ul>
+  <li>Input integer A and B</li>
+  <li>Make A sequences (B-nt)</li>
+</ul>
+
+<!--more-->
+
+<h2 id="script">script</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">t_base</span> <span class="o">=</span> <span class="p">(</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"t"</span><span class="p">,</span> <span class="s">"g"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">)</span>
+<span class="c1"># a tuple of the four bases
+</span>
+<span class="n">i_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Number of oligo to make: "</span><span class="p">))</span>
+<span class="n">i_length</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Length of oligo in nt: "</span><span class="p">))</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"output.txt"</span><span class="p">,</span><span class="s">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh_output</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">i_number</span><span class="p">):</span>
+        <span class="n">l_dna</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># start with empty list in each loop
+</span>
+        <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i_length</span><span class="p">):</span>
+            <span class="n">l_dna</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">choice</span><span class="p">(</span><span class="n">t_base</span><span class="p">))</span>
+            <span class="c1"># append random base to the list
+</span>
+        <span class="n">s_dna</span> <span class="o">=</span> <span class="s">""</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">l_dna</span><span class="p">)</span>
+        <span class="c1"># join the list into a string
+</span>
+        <span class="k">print</span> <span class="p">(</span><span class="sa">f</span><span class="s">"Generating random seq </span><span class="si">{</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s">..."</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">"</span><span class="se">\r</span><span class="s">"</span><span class="p">)</span>
+        <span class="c1"># \r allows printing on the same line
+</span>        
+        <span class="n">fh_output</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">s_dna</span><span class="si">}</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+        <span class="c1"># remember to add \n 
+</span>        
+        
+<span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">done!"</span><span class="p">)</span>
+<span class="c1"># set a new line before printing done
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Number of oligo to make: 1000
+Length of oligo in nt: 50
+Making random seq 1000...
+done!
+</code></pre></div></div>
+
+<h2 id="outputtxt">output.txt</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tagacaccgacgttacca
+gttccgttcttggagagt
+tcatagtcaatcggagag
+gttaccgtagtcgaggga
+taaacatttgcgtactgt
+aaaagggacctgcgctta
+agttcgggtacggaaact
+agcggagctgtctcctct
+</code></pre></div></div>
+:ET

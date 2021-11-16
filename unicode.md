@@ -1,5 +1,5 @@
 ---
-layout: pagenoheadfoot
+layout: hidden
 permalink: /unicode.html
 ---
 

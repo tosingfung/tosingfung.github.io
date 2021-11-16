@@ -2,7 +2,7 @@
 
 layout: post
 tag: python-script
-title: "Parse GB files with multiple viral genomes and write selected CDS to one FASTA"
+title: "Parse GB and write to FASTA"
 ---
 
 - Input download.gb

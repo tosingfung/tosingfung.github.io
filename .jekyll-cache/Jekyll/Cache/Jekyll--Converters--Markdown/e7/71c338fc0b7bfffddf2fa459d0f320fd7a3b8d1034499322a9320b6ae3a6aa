@@ -1,0 +1,98 @@
+I"V<ul>
+  <li>3 ways to add styles</li>
+</ul>
+
+<!--more-->
+
+<h2 id="external-css-file">External .css file</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* mystyle.css external stylesheet */</span>
+<span class="c">/* placed in same folder as .html */</span>
+<span class="nt">h1</span> <span class="p">{</span>
+<span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="nl">background-color</span><span class="p">:</span> <span class="m">#ddd</span><span class="p">;</span>
+<span class="nl">color</span><span class="p">:</span> <span class="m">#003151</span><span class="p">;</span>
+<span class="nl">font-family</span><span class="p">:</span> <span class="n">roboto</span><span class="p">,</span> <span class="n">arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nl">font-size</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+<span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="nl">line-height</span><span class="p">:</span> <span class="m">1.2</span><span class="p">;</span>
+<span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;}</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"mystyle.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;h1&gt;</span>heading1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="embed-stylesheet-in-header">Embed stylesheet in header</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+<span class="nt">h1</span> <span class="p">{</span>
+<span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="nl">background-color</span><span class="p">:</span> <span class="m">#ddd</span><span class="p">;</span>
+<span class="nl">color</span><span class="p">:</span> <span class="m">#003151</span><span class="p">;</span>
+<span class="nl">font-family</span><span class="p">:</span> <span class="n">roboto</span><span class="p">,</span> <span class="n">arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nl">font-size</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+<span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="nl">line-height</span><span class="p">:</span> <span class="m">1.2</span><span class="p">;</span>
+<span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;h1&gt;</span>heading1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="enforce-a-style-to-element">Enforce a style to element</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">"
+padding: 0;
+margin: 0;
+background-color: #ddd;
+color: #003151;
+font-family: roboto, arial, sans-serif;
+font-size: 2em;
+font-weight: bold;
+font-style: italic;
+line-height: 1.2;
+text-align: center;
+text-decoration: underline;"</span><span class="nt">&gt;</span>
+heading1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+:ET

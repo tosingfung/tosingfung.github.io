@@ -1,13 +1,10 @@
 ---
-title: "Capsaicin essay"
+title: Capsaicin essay
 layout: post
-tag: undergraduate-old-stuff
+tag: undergraduate
 ---
 
-- Plant physiology Yr4 course
-- Original uncorrected version
 
-<!--more-->
 
 ## Capsaicin – the "Hot" Compound in Chili Peppers
 
@@ -27,13 +24,13 @@ Chili pepper is fruit of the plants from genus Capsicum, members of the nightsha
 
 Capsaicin was first isolated in 1816 by P.A. Bucholz. The Hungarian physician Endre Hogyes proved that besides causing the burning feeling when in contact with skin or mucous membrane, capsaicin also increased the secretion of gastric acid. Structure of capsaicin was partially elucidated by Nelson in 1919 and in 1955. Crombie first reported the artificial synthesis of capsaicin.
 
-![](/images/cap-1.png)
+![](https://raw.githubusercontent.com/tosingfung/images/master/cap-1.png)
 
 #### The chemical structure of capsaicin and vanillin
 
 Capsaicin is synthesized from vanillin (right), the primary component in the extract of vanilla bean. Vanillin is a secondary metabolite belonging to the phenolic compounds. The carbon backbone is derived from amino acid phenylalanine, which is synthesized via the shikimic acid pathway from simple carbohydrate precursors from glycolysis and pentose phosphate pathway. The enzyme phenylalanine ammonia lyase (PAL) removes ammonia to form trans-Cinnamic acid. Final cleavage of a two-carbon fragment from the side chain and further modification result in vanillin, a benzoic acid derivatives.
 
-![](/images/cap-2.png)
+![](https://raw.githubusercontent.com/tosingfung/images/master/cap-2.png)
 
 #### The biosynthetic pathway of capsaicin
 
@@ -41,7 +38,7 @@ The vanillin is then converted to vanillylamine (left moiety) by reducing the si
 
 Interestingly, the structure of the fatty acid moiety can strongly affect the relative "hotness" of capsaicin and its related compounds (referred to as capsaicinoids). Capsaicin accounts for 69% of total capsaicinoids in chili peppers and has the strongest pungency. Dihydrocapsaicin (22% of total capsaicinoid) has the same carbon skeleton, but is saturated in the fatty acid moiety. It has about the same pungency as capsaicin. But for homocapsaicin, which accounts for only 1% of total capsaicinoid and has one more carbon in the fatty acid moiety, is only half as pungent as capsaicin.
 
-![](/images/cap-3.png)
+![](https://raw.githubusercontent.com/tosingfung/images/master/cap-3.png)
 
 #### The structure of dihydrocapsaicin and homocapsaicin
 
@@ -55,7 +52,7 @@ The fact is, "one’s poison is another’s delicacy". Scientists found that tho
 
 But the story doesn’t end there. For chili peppers, the most significant predisposal fruit and seed damage is not due to mammals or insects, but infection by a fungal species called Fusarium semitectum. The fungus gains entry into the pepper fruits with the help of hemipteran bettles (Figure 1a), which pierce the pericarp of fruits with their proboscises. The invasion leaves visible scars on the fruit surface. (Figure 1b) Inside, fungal propagation causes decomposition of the fresh and seeds (Figure 1c) The degree of damage can be scored by the discoloration of the fruit.
 
-![](/images/cap-4.png)
+![](https://raw.githubusercontent.com/tosingfung/images/master/cap-4.png)
 
 #### **Figure 1**. a, The hemipteran beetle. b, visible bitten scars on the fruit. c, relationship between fungal propagation and seed viability
 
@@ -63,7 +60,7 @@ In 2006, a research group found that although both pungent and non-pungent chili
 
 To confirm this, the scientists did an in vitro experiment. They prepared artificial fruit media that mimic the composition of chili peppers and used them to culture Fusarium. In the present of capsaicin and dihydrocapsaicin, the relative fungal growth (related to the control medium that doesn’t contain capsaicinoid) is measured. As shown in Figure 2, the growth of Fusarium is significantly inhibited by capsaicin as well as dihydrocapsaicin. If capsaicin is an adaptation evolved to defend against fungal infection, we would expect to find the content of capsaicin to correlate with the fungal selection pressure.
 
-![](/images/cap-5.png)
+![](https://raw.githubusercontent.com/tosingfung/images/master/cap-5.png)
 
 #### **Figure 2**. The relative growth of Fusarium under different concentrations of capsaicin (solid line) and dihydrocapsaicin (dashed line). Figure reproduced from Joshua, 2008
 
@@ -89,7 +86,7 @@ This explains why people living in hot climate enjoy spicy food more than those 
 
 Although capsaicin has hypothermal activity, it is quite unlikely that plants utilize this property for self-defense. Obviously it is neither effective nor quick enough. To serve as an good food deterrent, a compound must cause extensive damage to the herbivore within short period of time. Capsaicin accomplishes this via two pathways, which occur independently but also amplify each other. TRPV1 is located on the nerve terminal of some primary sensory neurons, whose somata are in the dorsal root ganglion. These neurons are peptidergic and use substance P (SP) as the major neurotransmitter.
 
-![](/images/cap-6.png)
+![](https://raw.githubusercontent.com/tosingfung/images/master/cap-6.png)
 
 #### **Figure 3**. Mechanism of capsaicin-induced pain. Figure reproduced from Aprad, 1999
 

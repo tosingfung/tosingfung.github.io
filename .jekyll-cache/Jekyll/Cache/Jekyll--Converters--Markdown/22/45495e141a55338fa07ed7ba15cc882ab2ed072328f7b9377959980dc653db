@@ -1,0 +1,69 @@
+I"þ<ul>
+  <li>Anchor(a) name and href</li>
+  <li>Img src</li>
+  <li>table, tr, th, td, colspan, rowspan</li>
+</ul>
+
+<!--more-->
+
+<h2 id="start-a-new-window-to-open-link">Start a new window to open link</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.bing.com"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>www.bing.com!<span class="nt">&lt;/a&gt;</span>
+<span class="c">&lt;!-- target="_blank" opens a new window --&gt;</span>
+</code></pre></div></div>
+
+<h2 id="link-to-a-location-on-the-same-page">Link to a location on the same page</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Table of Content --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#ch1"</span><span class="nt">&gt;</span>Chapter 1 Introduction<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#ch2"</span><span class="nt">&gt;</span>Chapter 2 Conslusion<span class="nt">&lt;/a&gt;</span>
+
+<span class="nt">&lt;a</span> <span class="na">name=</span><span class="s">"ch1"</span><span class="nt">&gt;</span>Chapter 1 Introduction<span class="nt">&lt;/a&gt;</span>
+<span class="c">&lt;!-- Content of chapter 1 --&gt;</span>
+<span class="c">&lt;!-- Content of chapter 1 --&gt;</span>
+<span class="c">&lt;!-- Content of chapter 1 --&gt;</span>
+
+<span class="nt">&lt;a</span> <span class="na">name=</span><span class="s">"ch2"</span><span class="nt">&gt;</span>Chapter 2 Conslusion<span class="nt">&lt;/a&gt;</span>
+<span class="c">&lt;!-- Content of chapter 2 --&gt;</span>
+<span class="c">&lt;!-- Content of chapter 2 --&gt;</span>
+<span class="c">&lt;!-- Content of chapter 2 --&gt;</span>
+</code></pre></div></div>
+
+<h2 id="add-image">Add image</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"img/sample.png"</span> <span class="nt">/&gt;&lt;/a&gt;&lt;/p&gt;</span>
+<span class="c">&lt;!-- sample.png placed in img folder --&gt;</span>
+<span class="c">&lt;!-- img folder in same path as HTML --&gt;</span>
+</code></pre></div></div>
+
+<h2 id="add-table">Add table</h2>
+
+<p><img src="images/image-20210618171500009.png" alt="image-20210618171500009" /></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+<span class="nt">th</span> <span class="p">{</span><span class="nl">background</span><span class="p">:</span> <span class="m">#fde</span><span class="p">;}</span> <span class="o">&lt;!</span><span class="nt">--pink--</span><span class="o">&gt;</span>
+<span class="nt">td</span> <span class="p">{</span><span class="nl">background</span><span class="p">:</span> <span class="m">#def</span><span class="p">;}</span> <span class="o">&lt;!</span><span class="nt">--blue--</span><span class="o">&gt;</span>
+<span class="nt">th</span><span class="o">,</span> <span class="nt">td</span> <span class="p">{</span><span class="nl">padding</span><span class="p">:</span> <span class="m">0.5em</span> <span class="m">1em</span><span class="p">;}</span>
+<span class="nt">caption</span> <span class="p">{</span><span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0.5em</span><span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;table</span> <span class="na">cellspacing=</span><span class="s">"0"</span> <span class="na">border=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;caption&gt;</span>Table 1<span class="nt">&lt;/caption&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">rowspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>A1<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;th</span> <span class="na">colspan=</span><span class="s">"2"</span> <span class="na">align=</span><span class="s">"right"</span><span class="nt">&gt;</span>A2<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+<span class="nt">&lt;td</span> <span class="nt">&gt;</span>B2<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">rowspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>B3<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+<span class="nt">&lt;th</span> <span class="na">colspan=</span><span class="s">"2"</span> <span class="na">align=</span><span class="s">"left"</span><span class="nt">&gt;</span>C1<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+:ET

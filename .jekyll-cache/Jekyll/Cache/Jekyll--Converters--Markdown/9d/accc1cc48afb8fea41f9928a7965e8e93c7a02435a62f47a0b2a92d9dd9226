@@ -1,0 +1,163 @@
+I"9<ul>
+  <li>reverse and/or complement</li>
+  <li>parse fasta/genbank</li>
+  <li>base count and GC content</li>
+  <li>slice and join sequence</li>
+  <li>upper and lower case</li>
+  <li>transcribe and translate</li>
+</ul>
+
+<!--more-->
+
+<h2 id="comp-and-rev_comp">comp and rev_comp</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="n">dna</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s">"AGGGCCCTTTA"</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># reverse
+</span><span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">.</span><span class="n">complement</span><span class="p">())</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">.</span><span class="n">reverse_complement</span><span class="p">())</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ATTTCCCGGGA
+TCCCGGGAAAT
+TAAAGGGCCCT
+</code></pre></div></div>
+
+<h2 id="parse-fasta-file">parse fasta file</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">SeqIO</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="s">"ibv.fasta"</span><span class="p">,</span><span class="s">"fasta"</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="nb">id</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">seq</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">seq</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DQ001339.1
+27611
+Seq('ACTTAAGATAGATATTAATATATATCTATTATACTAGCCTTGCGCTAGATTTTT...GCA')
+</code></pre></div></div>
+
+<h2 id="parse-genbank-file">parse genbank file</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">SeqIO</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="s">"sars2.gb"</span><span class="p">,</span><span class="s">"genbank"</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="nb">id</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">seq</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">seq</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NC_045512.2
+29903
+Seq('ATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGT...AAA')
+</code></pre></div></div>
+
+<h2 id="gc-content">GC content</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="kn">from</span> <span class="nn">Bio.SeqUtils</span> <span class="kn">import</span> <span class="n">GC</span>
+<span class="n">dna</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s">"GaTCGaTGGGCCTaTATAGGATCGaaaaTCGC"</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="sa">f</span><span class="s">"""</span><span class="se">\
+</span><span class="s">A: </span><span class="si">{</span><span class="n">dna</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span><span class="si">}</span><span class="s">
+a: </span><span class="si">{</span><span class="n">dna</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span><span class="si">}</span><span class="s">
+T: </span><span class="si">{</span><span class="n">dna</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="s">"T"</span><span class="p">)</span><span class="si">}</span><span class="s">
+G: </span><span class="si">{</span><span class="n">dna</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="s">"G"</span><span class="p">)</span><span class="si">}</span><span class="s">
+C: </span><span class="si">{</span><span class="n">dna</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="s">"C"</span><span class="p">)</span><span class="si">}</span><span class="s">
+GC </span><span class="si">{</span><span class="n">GC</span><span class="p">(</span><span class="n">dna</span><span class="p">)</span><span class="si">}</span><span class="s">%</span><span class="se">\
+</span><span class="s">"""</span><span class="p">)</span>
+<span class="c1"># .count() is sensitive to mixed case
+# .GC() is not senstitive
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A: 3
+a: 7
+T: 7
+G: 9
+C: 6
+GC 46.875%
+</code></pre></div></div>
+
+<h2 id="slicing-a-sequence">slicing a sequence</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="n">dna</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s">"GATCGATGGGCCTATATAGGATCGAAAATCGC"</span><span class="p">)</span>
+<span class="c1">#          0123456789
+</span><span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">9</span><span class="p">])</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">3</span><span class="p">])</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">3</span><span class="p">])</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">[</span><span class="mi">2</span><span class="p">::</span><span class="mi">3</span><span class="p">])</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CGATGG
+GCTGTAGTAAG
+AGGCATGCATC
+TAGCTAAGAC
+</code></pre></div></div>
+
+<h2 id="concatenate-sequence">concatenate sequence</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="n">l_seq</span> <span class="o">=</span> <span class="p">[</span><span class="n">Seq</span><span class="p">(</span><span class="s">"ACGT"</span><span class="p">),</span> <span class="n">Seq</span><span class="p">(</span><span class="s">"AACC"</span><span class="p">),</span> <span class="n">Seq</span><span class="p">(</span><span class="s">"GGTT"</span><span class="p">)]</span>
+<span class="n">concat</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s">""</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">l_seq</span><span class="p">:</span>
+    <span class="n">concat</span> <span class="o">+=</span> <span class="n">s</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">concat</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ACGTAACCGGTT
+</code></pre></div></div>
+
+<h2 id="join-sequence">join sequence</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="n">l_seq</span> <span class="o">=</span> <span class="p">[</span><span class="n">Seq</span><span class="p">(</span><span class="s">"ACGT"</span><span class="p">),</span> <span class="n">Seq</span><span class="p">(</span><span class="s">"AACC"</span><span class="p">),</span> <span class="n">Seq</span><span class="p">(</span><span class="s">"GGTT"</span><span class="p">)]</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">Seq</span><span class="p">(</span><span class="s">""</span><span class="p">).</span><span class="n">join</span><span class="p">(</span><span class="n">l_seq</span><span class="p">))</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">Seq</span><span class="p">(</span><span class="s">"nnnnn"</span><span class="p">).</span><span class="n">join</span><span class="p">(</span><span class="n">l_seq</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ACGTAACCGGTT
+ACGTnnnnnAACCnnnnnGGTT
+</code></pre></div></div>
+
+<h2 id="upper-and-lower">upper and lower</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="n">dna</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s">"GATCGATGGGCCTATATAGGATCGAAAATCGC"</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">.</span><span class="n">lower</span><span class="p">())</span>
+<span class="k">print</span> <span class="p">(</span><span class="s">"GATC"</span> <span class="ow">in</span> <span class="n">dna</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="s">"GATC"</span> <span class="ow">in</span> <span class="n">dna</span><span class="p">.</span><span class="n">lower</span><span class="p">())</span> <span class="c1"># case matching
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gatcgatgggcctatataggatcgaaaatcgc
+True
+False
+</code></pre></div></div>
+
+<h2 id="transcribe-and-translate">transcribe and translate</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="n">dna</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s">"ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">.</span><span class="n">transcribe</span><span class="p">())</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">.</span><span class="n">translate</span><span class="p">())</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUAG
+MAIVMGR*KGAR*
+</code></pre></div></div>
+
+<h2 id="translate-parameters">translate parameters</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+<span class="n">dna</span> <span class="o">=</span> <span class="n">Seq</span><span class="p">(</span><span class="s">"ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">.</span><span class="n">translate</span><span class="p">())</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">.</span><span class="n">translate</span><span class="p">(</span><span class="n">to_stop</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">.</span><span class="n">translate</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="s">"Vertebrate Mitochondrial"</span><span class="p">))</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">dna</span><span class="p">.</span><span class="n">translate</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="s">"Vertebrate Mitochondrial"</span><span class="p">,</span> <span class="n">to_stop</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MAIVMGR*KGAR*
+MAIVMGR
+MAIVMGRWKGAR*
+MAIVMGRWKGAR
+</code></pre></div></div>
+
+:ET

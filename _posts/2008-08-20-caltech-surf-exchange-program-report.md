@@ -1,15 +1,10 @@
 ---
-title: "2008 SURF report"
+title: 2008 SURF report
 layout: post
-tag: undergraduate-old-stuff
+tag: undergraduate
 ---
 
-- SURF (Summer Undergraduate Research Fellowship) program
-- Division of Biology, Caltech, US
-- Experimental report
-- Original uncorrected version
 
-<!--more-->
 
 ## The Role of Ubiquitin Proteasome System in the Differentiation of Mouse Embryonic Stem Cell into Cardiomyocyte
 
@@ -45,19 +40,19 @@ Prior to the siRNA screen, culturing conditions for spontaneous differentiation 
 
 In all the 3 sets of the pilot experiment, cells were plated on 384-well plates as well as slide flasks. The slide flasks were fixed on Day1, Day8 and Day12 post-plating and GFP expression was qualitatively assayed using a fluorescent microscope. The 384-well plates were screened for GFP expression on Day7, Day10 and Day13 post-plating. The images of slide flask pilot experiment is shown as in Table-1. In the control set, no GFP was expressed on Day1 and Day 8. Very low level of GFP was expressed by scattered singlular cells on Day12. 2. In the Col-IV pre-culture set, no GFP was expressed on Day1. Intermediate GFP expression was observed on Day8. On Day12, the GFP intensity was much higher and GFP positive cell areas were extensively distributed on the slide. 3. In the gelatin pre-preculture set, no GFP was expressed on Day1 and Day 8. Intermediate GFP expression was observed on Day12.
 
-![](/images/surf-1.png)
+![](https://raw.githubusercontent.com/tosingfung/images/master/surf-1.png)
 
 #### **Table 1.** GFP expression of αMHC-GFP cells in slide flask experiment
 
 As shown in Table-2, the results of 384-well plate experiment were in consistence with the slide flasks experiment. GFP expression was quantified as total GFP positive areas (square μm) in each well. 
 
-![](/images/surf-2.png)
+![](https://raw.githubusercontent.com/tosingfung/images/master/surf-2.png)
 
 #### **Table 2.** GFP expression of αMHC-GFP cells in 384-well plate experiment
 
 To further characterize GFP distribution on a plate, a histogram showing the well number count of different GFP expression level was plotted for Day13 data of the two pre-culture sets, as shown in Figure-1. In the gelatin pre-culture set, most wells had GFP expression in the low to intermediate range. In the Col-IV preculture set, GFP expression was naturally distributed in the intermediate to high range.
 
-![](/images/surf-3.png)
+![](https://raw.githubusercontent.com/tosingfung/images/master/surf-3.png)
 
 #### **Figure 1.** Well number count of total GFP positive areas in Col-IV pre-culture Day 13 plates and gelatin pre-culture Day 13 plates
 
@@ -69,7 +64,7 @@ Based on the pilot experiment, the established culture condition was applicable 
 
 The assay was done duplicated; all wells in Plate 1, 2, 3, 4, 1R, 2R, 3R and 4R were treated with siRNA from the library. Four rows in Plate 5 and 5R were transfected with siRNA, the remaining wells were mock transfected and served as the control. GFP expression was screened on day4, 6, 8, 10, 13 and 15 post-plating. Before day10, GFP expression was insignificant. After day10, cell detachment was observed in some over-confluent wells. Thus, Day10 data was analyzed. Table-3 shows the data analysis of all ten plates and the control set.
 
-![](/images/surf-4.png)
+![](https://raw.githubusercontent.com/tosingfung/images/master/surf-4.png)
 
 #### **Table 3.** GFP expression on ten plates and the control set (square micron)
 

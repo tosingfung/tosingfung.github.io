@@ -1,11 +1,11 @@
 ---
-layout: pagenoheadfoot
+layout: page
 title: "简历"
 permalink: /cv-cn
 
 ---
 
-<h1 align="center" style="padding-top: 1em">个人简历</h1>
+<h1 align="center">个人简历</h1>
 
 <div align="right">
 <span>

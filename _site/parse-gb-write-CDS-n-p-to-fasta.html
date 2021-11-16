@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parse GB and write to FASTA</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="http://localhost:4000/parse-gb-write-CDS-n-p-to-fasta">
+  <link rel="alternate" type="application/rss+xml" title="Martin Fung&#39;s Page Feed"
+    href="http://localhost:4000/feed.xml">
+  
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+  
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%7CNoto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="page" class="site">
+    <div class="inner">
+      <h1 style="text-align: center; padding: 1em 0 0.3em">
+<a class="logo-text" href="/">Martin Fung's Page</a>
+</h1>
+
+<h2 style="text-align: center; margin: 0">
+    
+    
+    
+    <span>|</span>
+    <a style="padding: 0 0.5em 0" class="" href="/tags">Blog</a>
+    
+    
+    
+    <span>|</span>
+    <a style="padding: 0 0.5em 0" class="" href="/cv">CV</a>
+    
+    <span>|</span>
+</h2>
+<hr>
+
+      <main class="main-content fadeInDown delay_075s">
+
+  <article class="post">
+    <header class="post-header">
+      <time class="post-date" datetime="2021-06-21">June 21, 2021 / Monday</time>
+      <h1 class="post-title">Parse GB and write to FASTA</h1>
+      <div class="post-meta">
+        <span class="post-tags">Tags: <a href="/tags/#python-script" rel="tag">python-script</a></span>
+      </div><!-- .post-meta -->
+      
+    </header><!-- .post-header -->
+    <div class="post-content">
+      <ul>
+  <li>Input download.gb</li>
+  <li>Choose nucleotide or protein seq</li>
+  <li>Give abbr. for virus strain/isolate</li>
+  <li>Parse GB record</li>
+  <li>Enumerate CDS with translation</li>
+  <li>Choose CDS and give abbr.</li>
+  <li>Give name to output .fasta file</li>
+  <li>Write to the output .fasta file</li>
+</ul>
+
+<!--more-->
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">SeqIO</span>
+
+<span class="c1">### get a string from compulsory input
+### take prompt message as only argument
+</span><span class="k">def</span> <span class="nf">getInputStr</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="s">""</span>
+    <span class="k">while</span> <span class="n">s</span> <span class="o">==</span> <span class="s">""</span><span class="p">:</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">continue</span>
+    <span class="k">return</span> <span class="n">s</span>
+<span class="c1">###
+</span>
+
+
+<span class="c1">### ask for choice between two options
+### if user choose option 1, return int 1
+### if user choose option 2, return int 2
+</span><span class="k">def</span> <span class="nf">getInputSelect</span> <span class="p">(</span><span class="n">msg</span><span class="p">,</span><span class="n">s1</span><span class="p">,</span><span class="n">d1</span><span class="p">,</span><span class="n">s2</span><span class="p">,</span><span class="n">d2</span><span class="p">):</span>
+    <span class="n">selection</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">selection</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="n">Input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s">"Enter </span><span class="si">{</span><span class="n">s1</span><span class="si">}</span><span class="s"> for </span><span class="si">{</span><span class="n">d1</span><span class="si">}</span><span class="s">, </span><span class="si">{</span><span class="n">s2</span><span class="si">}</span><span class="s"> for </span><span class="si">{</span><span class="n">d2</span><span class="si">}</span><span class="s">:  "</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">Input</span> <span class="o">==</span> <span class="n">s1</span><span class="p">:</span>
+            <span class="n">selection</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">elif</span> <span class="n">Input</span> <span class="o">==</span> <span class="n">s2</span><span class="p">:</span>
+            <span class="n">selection</span> <span class="o">=</span> <span class="mi">2</span>
+        <span class="k">else</span><span class="p">:</span> <span class="k">continue</span>
+    <span class="k">return</span> <span class="n">selection</span>
+<span class="c1">###
+</span>
+
+
+<span class="c1">### input a string: number separated by comma
+### split and append number to a list
+### use number as key to get description of CDS product:
+### SeqFeature.qualifiers["product"][0]
+### display and ask user to confirm
+### if confirm, return the list
+### if deny, loop to get input again
+</span><span class="k">def</span> <span class="nf">get_input_list_check_CDS</span> <span class="p">(</span><span class="n">dic</span><span class="p">):</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="n">l</span> <span class="o">==</span> <span class="p">[]:</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Select item(s) to download (1,2...):  "</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">):</span>
+            <span class="k">try</span><span class="p">:</span> <span class="n">l</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+            <span class="k">except</span><span class="p">:</span> <span class="k">continue</span>
+        <span class="n">l1</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">l</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s">"You have selected these:  "</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">l1</span><span class="p">:</span>
+            <span class="k">print</span> <span class="p">(</span><span class="n">dic</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">yn</span> <span class="o">=</span> <span class="n">getInputSelect</span><span class="p">(</span><span class="s">"Proceed to write to fasta?"</span><span class="p">,</span><span class="s">"y"</span><span class="p">,</span><span class="s">"yes"</span><span class="p">,</span><span class="s">"n"</span><span class="p">,</span><span class="s">"no"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">yn</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="k">if</span> <span class="n">yn</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">l</span><span class="p">.</span><span class="n">clear</span><span class="p">()</span>
+            <span class="k">continue</span>
+    <span class="k">return</span> <span class="n">l1</span>
+<span class="c1">###
+</span>
+
+
+<span class="c1">### build a dictionary from SeqRecord
+### get user input for abbreviation of GB record
+### filter features with .type==CDS and has translation in .qualifiers
+### extract the CDS sequence and protein sequences
+</span><span class="k">def</span> <span class="nf">build_CDS_dic</span><span class="p">(</span><span class="n">record</span><span class="p">):</span>
+    <span class="n">CDS_counter</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">dic</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">CDS_source_abbr</span> <span class="o">=</span> <span class="n">getInputStr</span><span class="p">(</span><span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"Give abbreviation for the follwing isolate:</span><span class="se">\n</span><span class="si">{</span><span class="n">record</span><span class="p">.</span><span class="n">description</span><span class="si">}</span><span class="s">:  "</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="p">.</span><span class="n">features</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">feature</span><span class="p">.</span><span class="nb">type</span> <span class="o">==</span> <span class="s">"CDS"</span> <span class="ow">and</span> <span class="s">"translation"</span> <span class="ow">in</span> <span class="n">feature</span><span class="p">.</span><span class="n">qualifiers</span><span class="p">:</span>
+            <span class="n">CDS_counter</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">CDS_protein_id</span> <span class="o">=</span> <span class="n">feature</span><span class="p">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s">'protein_id'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># dic0
+</span>            <span class="n">CDS_product</span> <span class="o">=</span> <span class="n">feature</span><span class="p">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s">'product'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># dic1
+</span>            <span class="n">CDS_sequence</span> <span class="o">=</span> <span class="n">feature</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">extract</span><span class="p">(</span><span class="n">record</span><span class="p">.</span><span class="n">seq</span><span class="p">)</span> <span class="c1">#dic2
+</span>            <span class="n">CDS_translation</span> <span class="o">=</span> <span class="n">feature</span><span class="p">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s">'translation'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="c1">#dic3      
+</span>            <span class="n">dic</span><span class="p">[</span><span class="n">CDS_counter</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">CDS_protein_id</span><span class="p">,</span> \
+                                  <span class="n">CDS_product</span><span class="p">,</span> \
+                                  <span class="n">CDS_sequence</span><span class="p">,</span> \
+                                  <span class="n">CDS_translation</span><span class="p">,</span> \
+                                  <span class="n">CDS_source_abbr</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">dic</span>
+<span class="c1">###
+</span>
+
+
+<span class="c1">### enumerate CDS from a CDS_dict
+### show the key, accession and CDS product
+</span><span class="k">def</span> <span class="nf">enumerate_CDS</span><span class="p">(</span><span class="n">dic</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">dic</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">k</span><span class="err">!</span><span class="n">s</span><span class="p">:</span><span class="mi">5</span><span class="si">}{</span><span class="n">dic</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">0</span><span class="p">]:</span><span class="mi">18</span><span class="si">}{</span><span class="n">dic</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+<span class="c1">###
+</span>
+
+
+<span class="c1">### three arguments
+### lis: list of CDS keys input and confirm by user
+### dic: CDS dictionary generated from parsing a SeqRecord
+### np: nucleotide(1) or protein(2) seq type user choose
+</span><span class="k">def</span> <span class="nf">write_fasta</span><span class="p">(</span><span class="n">lis</span><span class="p">,</span><span class="n">dic</span><span class="p">,</span><span class="n">np</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">lis</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">seq</span> <span class="o">=</span> <span class="n">dic</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">np</span><span class="p">]</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">getInputStr</span><span class="p">(</span><span class="sa">f</span><span class="s">"Give abbreviation for </span><span class="si">{</span><span class="n">dic</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s">:  "</span><span class="p">)</span>
+            <span class="n">fh</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">"&gt;</span><span class="si">{</span><span class="n">dic</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">4</span><span class="p">]</span><span class="si">}</span><span class="s">-</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">seq</span><span class="si">}</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span> <span class="k">continue</span>
+<span class="c1">###
+</span>
+
+
+<span class="c1">### core script
+</span><span class="n">fname</span> <span class="o">=</span> <span class="n">getInputStr</span><span class="p">(</span><span class="s">"Give a file name for the fasta file:  "</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s">.fasta"</span><span class="p">,</span><span class="s">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+    <span class="c1"># open fasta output with user provided file name
+</span>    <span class="n">dicRecord</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">dicIndex</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="s">"download.gb"</span><span class="p">,</span><span class="s">"gb"</span><span class="p">)</span>
+    <span class="c1"># create SeqIO.index handle for GB file 
+</span>    
+    <span class="n">np</span> <span class="o">=</span> <span class="n">getInputSelect</span><span class="p">(</span><span class="s">"Get nucleotide or protein sequence?"</span><span class="p">,</span><span class="s">"n"</span><span class="p">,</span><span class="s">"nucleotide"</span><span class="p">,</span><span class="s">"p"</span><span class="p">,</span><span class="s">"protein"</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
+    <span class="c1"># user choose seq type: nucleotide(np=2) or protein(np=3)
+</span>    
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">dicIndex</span><span class="p">):</span>
+        <span class="n">dicRecord</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span><span class="p">,</span><span class="n">dicIndex</span><span class="p">[</span><span class="n">key</span><span class="p">]]</span>
+        <span class="c1"># create dicRecord from dicIndex
+</span>        
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">dicRecord</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">n</span><span class="err">!</span><span class="n">s</span><span class="p">:</span><span class="mi">5</span><span class="si">}{</span><span class="n">dicRecord</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">0</span><span class="p">]:</span><span class="mi">18</span><span class="si">}{</span><span class="n">dicRecord</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">1</span><span class="p">].</span><span class="n">description</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    <span class="k">print</span> <span class="p">(</span><span class="sa">f</span><span class="s">"Total </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">dicRecord</span><span class="p">)</span><span class="si">}</span><span class="s"> records to process</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="s">"="</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
+        <span class="c1"># enumerate record in the dicRecord
+</span>    
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">dicRecord</span><span class="p">:</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">dicRecord</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">CDS_dic</span> <span class="o">=</span> <span class="n">build_CDS_dic</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">enumerate_CDS</span><span class="p">(</span><span class="n">CDS_dic</span><span class="p">)</span>
+        <span class="n">yn1</span> <span class="o">=</span> <span class="n">getInputSelect</span><span class="p">(</span><span class="s">"Proceed to select items?"</span><span class="p">,</span><span class="s">"y"</span><span class="p">,</span><span class="s">"yes"</span><span class="p">,</span><span class="s">"n"</span><span class="p">,</span><span class="s">"no"</span><span class="p">)</span>
+        <span class="c1"># user choose whether extract CDS from current record
+</span>        <span class="c1"># if yes, user input a list
+</span>        <span class="c1"># if no, skip this record and move on to next record in dicRecord
+</span>        <span class="k">if</span> <span class="n">yn1</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">write_fasta</span><span class="p">(</span><span class="n">get_input_list_check_CDS</span><span class="p">(</span><span class="n">CDS_dic</span><span class="p">),</span><span class="n">CDS_dic</span><span class="p">,</span><span class="n">np</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">yn1</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span> <span class="k">continue</span>
+
+<span class="n">dicIndex</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+<span class="c1"># close the SeqIO.index handle
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Give a file name for the fasta file:  E protein
+Get nucleotide or protein sequence?
+Enter n for nucleotide, p for protein:  p
+1    NC_048213.1       Infectious bronchitis virus isolate Ind-TN92-03, complete genome
+2    NC_001451.1       Avian infectious bronchitis virus, complete genome
+3    NC_002470.1       Turkey astrovirus, complete genome
+4    NC_002469.1       Ovine astrovirus, complete genome
+Total 4 records to process
+ ==================================================
+Give abbreviation for the follwing isolate:
+Infectious bronchitis virus isolate Ind-TN92-03, complete genome:  TN92
+1    YP_009824996.1    ORF1ab polyprotein
+2    YP_009824997.1    ORF 1a polyprotein
+3    YP_009824998.1    spike glycoprotein
+4    YP_009824999.1    3a protein
+5    YP_009825000.1    3b protein
+6    YP_009825001.1    3c protein
+7    YP_009825002.1    membrane glycoprotein
+8    YP_009825003.1    5a protein
+9    YP_009825004.1    5b protein
+10   YP_009825005.1    nucleocapsid protein
+Proceed to select items?
+Enter y for yes, n for no:  y
+Select item(s) to download (1,2...):  1, *** Type Error ***
+You have selected these:  
+ORF1ab polyprotein
+Proceed to write to fasta?
+Enter y for yes, n for no:  n
+Select item(s) to download (1,2...):  6
+You have selected these:  
+3c protein
+Proceed to write to fasta?
+Enter y for yes, n for no:  y
+Give abbreviation for 3c protein:  E
+Give abbreviation for the follwing isolate:
+Avian infectious bronchitis virus, complete genome:  IBV
+1    NP_066134.1       ORF1ab polyprotein
+2    NP_040829.1       ORF1a polyprotein
+3    NP_040831.1       spike protein
+4    NP_040832.1       3a protein
+5    NP_040833.1       3b protein
+6    NP_040834.1       small virion-associated protein
+7    NP_040835.1       membrane protein
+8    NP_040836.1       5a protein
+9    NP_040837.1       5b protein
+10   NP_040838.1       nucleocapsid protein
+Proceed to select items?
+Enter y for yes, n for no:  y
+Select item(s) to download (1,2...):  6
+You have selected these:  
+small virion-associated protein
+Proceed to write to fasta?
+Enter y for yes, n for no:  y
+Give abbreviation for small virion-associated protein:  E
+Give abbreviation for the follwing isolate:
+Turkey astrovirus, complete genome:  Turkey
+1    NP_853540.1       orf1ab polyprotein (pp1ab)
+2    NP_059947.1       orf1a polyprotein (pp1a)
+3    NP_059949.1       capsid protein precursor
+Proceed to select items?
+Enter y for yes, n for no:  n
+Give abbreviation for the follwing isolate:
+Ovine astrovirus, complete genome:  Ovine
+1    NP_059945.2       orf1ab polyprotein (orf1ab)
+2    NP_059944.1       nonstructural protein, putative serine protase
+3    NP_059946.1       capsid protein precursor
+Proceed to select items?
+Enter y for yes, n for no:  n
+</code></pre></div></div>
+
+<h2 id="output-e-proteinfasta">(output) E protein.fasta</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span><span class="n">TN92</span><span class="o">-</span><span class="n">E</span>
+<span class="n">MMNLLNKSLEENGSFLTALYIIVGFLALYLLGRALQAFVQAADACCLFWYTWVVIPGAKGTAFVYKYTYGRKLNNPELEAVIVNEFPKNGWNNKNPANFQDVQRDKLHS</span>
+<span class="o">&gt;</span><span class="n">IBV</span><span class="o">-</span><span class="n">E</span>
+<span class="n">MNLLNKSLEENGSFLTALYIIVGFLALYLLGRALQAFVQAADACCLFWYTWVVIPGAKGTAFVYKYTYGRKLNNPELEAVIVNEFPKNGWNNKNPANFQDAQRDKLYS</span>
+</code></pre></div></div>
+
+    </div><!-- .post-content -->
+    <div style="margin-top: 3em"></div>
+    <div class="post-meta">
+      <span class="post-tags">Tags: <a href="/tags/#python-script" rel="tag">python-script</a></span>
+    </div><!-- .post-meta -->
+  </article><!-- .post -->
+
+  <div align="right"><a href="#page">Back to top</a></div>
+  <div style="margin-top: 3em"></div>
+
+</main><!-- .main-content -->
+      <footer class="site-footer">
+  <div class="offsite-links">
+    
+  </div><!-- .offsite-links -->
+  <div class="footer-bottom">
+    <div class="site-info">
+      <p>Copyright © 2007-21 To Sing Fung<br />Powered by Jekyll. Theme modified from Scriptor</p>
+
+    </div><!-- .site-info -->
+  </div><!-- .footer-bottom -->
+</footer><!-- .site-footer -->
+
+    </div><!-- .inner -->
+  </div><!-- .site -->
+
+
+</body>
+</html>

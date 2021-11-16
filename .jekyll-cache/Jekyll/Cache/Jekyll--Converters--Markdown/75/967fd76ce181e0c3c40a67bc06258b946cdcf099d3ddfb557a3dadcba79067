@@ -1,0 +1,39 @@
+I"3<ul>
+  <li>StartupMacro</li>
+  <li>Image crop (custom size)</li>
+  <li>Get filename and save as TIFF</li>
+</ul>
+
+<!--more-->
+
+<p><a href="https://imagej.net/Fiji/Downloads">Fiji download</a></p>
+
+<h2 id="startupmacros">StartupMacros</h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">macro</span> <span class="s">"Where to Crop [F5]"</span> <span class="o">{</span>
+		<span class="n">run</span><span class="o">(</span><span class="s">"8-bit"</span><span class="o">);</span>
+		<span class="c1">//setTool("rectangle");</span>
+		<span class="n">makeRectangle</span><span class="o">(</span><span class="mi">1216</span><span class="o">,</span> <span class="mi">756</span><span class="o">,</span> <span class="mi">1600</span><span class="o">,</span> <span class="mi">1600</span><span class="o">);</span>
+		<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">macro</span> <span class="s">"Crop Here [F6]"</span> <span class="o">{</span>
+		<span class="n">run</span><span class="o">(</span><span class="s">"Crop"</span><span class="o">);</span>
+		<span class="c1">//run("Brightness/Contrast...");</span>
+		<span class="n">run</span><span class="o">(</span><span class="s">"Enhance Contrast"</span><span class="o">,</span> <span class="s">"saturated=0.35"</span><span class="o">);</span>
+		<span class="n">run</span><span class="o">(</span><span class="s">"Apply LUT"</span><span class="o">);</span>
+		<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="n">macro</span> <span class="s">"save as TIFF and close [F12]"</span><span class="o">{</span>
+		<span class="n">dir</span> <span class="o">=</span> <span class="n">getDirectory</span><span class="o">(</span><span class="s">"image"</span><span class="o">);</span>
+		<span class="n">title</span> <span class="o">=</span> <span class="s">"untitled"</span><span class="o">;</span>
+		<span class="nc">Dialog</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="s">"File name:"</span><span class="o">);</span>
+		<span class="nc">Dialog</span><span class="o">.</span><span class="na">addString</span><span class="o">(</span><span class="s">"Input a file name:"</span><span class="o">,</span> <span class="n">title</span><span class="o">);</span>
+		<span class="nc">Dialog</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
+		<span class="n">title</span> <span class="o">=</span> <span class="nc">Dialog</span><span class="o">.</span><span class="na">getString</span><span class="o">();</span>
+		<span class="n">saveAs</span><span class="o">(</span><span class="s">"Tiff"</span><span class="o">,</span> <span class="n">dir</span><span class="o">+</span><span class="n">title</span><span class="o">);</span>
+		<span class="n">close</span><span class="o">();</span>
+	<span class="o">}</span>
+</code></pre></div></div>
+:ET

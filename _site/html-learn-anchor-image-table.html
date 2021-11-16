@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML anchor image table</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="http://localhost:4000/html-learn-anchor-image-table">
+  <link rel="alternate" type="application/rss+xml" title="Martin Fung&#39;s Page Feed"
+    href="http://localhost:4000/feed.xml">
+  
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+  
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%7CNoto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="page" class="site">
+    <div class="inner">
+      <h1 style="text-align: center; padding: 1em 0 0.3em">
+<a class="logo-text" href="/">Martin Fung's Page</a>
+</h1>
+
+<h2 style="text-align: center; margin: 0">
+    
+    
+    
+    <span>|</span>
+    <a style="padding: 0 0.5em 0" class="" href="/tags">Blog</a>
+    
+    
+    
+    <span>|</span>
+    <a style="padding: 0 0.5em 0" class="" href="/cv">CV</a>
+    
+    <span>|</span>
+</h2>
+<hr>
+
+      <main class="main-content fadeInDown delay_075s">
+
+  <article class="post">
+    <header class="post-header">
+      <time class="post-date" datetime="2021-06-18">June 18, 2021 / Friday</time>
+      <h1 class="post-title">HTML anchor image table</h1>
+      <div class="post-meta">
+        <span class="post-tags">Tags: <a href="/tags/#html-learn" rel="tag">html-learn</a></span>
+      </div><!-- .post-meta -->
+      
+    </header><!-- .post-header -->
+    <div class="post-content">
+      <ul>
+  <li>Anchor(a) name and href</li>
+  <li>Img src</li>
+  <li>table, tr, th, td, colspan, rowspan</li>
+</ul>
+
+<!--more-->
+
+<h2 id="start-a-new-window-to-open-link">Start a new window to open link</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.bing.com"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>www.bing.com!<span class="nt">&lt;/a&gt;</span>
+<span class="c">&lt;!-- target="_blank" opens a new window --&gt;</span>
+</code></pre></div></div>
+
+<h2 id="link-to-a-location-on-the-same-page">Link to a location on the same page</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Table of Content --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#ch1"</span><span class="nt">&gt;</span>Chapter 1 Introduction<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#ch2"</span><span class="nt">&gt;</span>Chapter 2 Conslusion<span class="nt">&lt;/a&gt;</span>
+
+<span class="nt">&lt;a</span> <span class="na">name=</span><span class="s">"ch1"</span><span class="nt">&gt;</span>Chapter 1 Introduction<span class="nt">&lt;/a&gt;</span>
+<span class="c">&lt;!-- Content of chapter 1 --&gt;</span>
+<span class="c">&lt;!-- Content of chapter 1 --&gt;</span>
+<span class="c">&lt;!-- Content of chapter 1 --&gt;</span>
+
+<span class="nt">&lt;a</span> <span class="na">name=</span><span class="s">"ch2"</span><span class="nt">&gt;</span>Chapter 2 Conslusion<span class="nt">&lt;/a&gt;</span>
+<span class="c">&lt;!-- Content of chapter 2 --&gt;</span>
+<span class="c">&lt;!-- Content of chapter 2 --&gt;</span>
+<span class="c">&lt;!-- Content of chapter 2 --&gt;</span>
+</code></pre></div></div>
+
+<h2 id="add-image">Add image</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"img/sample.png"</span> <span class="nt">/&gt;&lt;/a&gt;&lt;/p&gt;</span>
+<span class="c">&lt;!-- sample.png placed in img folder --&gt;</span>
+<span class="c">&lt;!-- img folder in same path as HTML --&gt;</span>
+</code></pre></div></div>
+
+<h2 id="add-table">Add table</h2>
+
+<p><img src="images/image-20210618171500009.png" alt="image-20210618171500009" /></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+<span class="nt">th</span> <span class="p">{</span><span class="nl">background</span><span class="p">:</span> <span class="m">#fde</span><span class="p">;}</span> <span class="o">&lt;!</span><span class="nt">--pink--</span><span class="o">&gt;</span>
+<span class="nt">td</span> <span class="p">{</span><span class="nl">background</span><span class="p">:</span> <span class="m">#def</span><span class="p">;}</span> <span class="o">&lt;!</span><span class="nt">--blue--</span><span class="o">&gt;</span>
+<span class="nt">th</span><span class="o">,</span> <span class="nt">td</span> <span class="p">{</span><span class="nl">padding</span><span class="p">:</span> <span class="m">0.5em</span> <span class="m">1em</span><span class="p">;}</span>
+<span class="nt">caption</span> <span class="p">{</span><span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0.5em</span><span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;table</span> <span class="na">cellspacing=</span><span class="s">"0"</span> <span class="na">border=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;caption&gt;</span>Table 1<span class="nt">&lt;/caption&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">rowspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>A1<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;th</span> <span class="na">colspan=</span><span class="s">"2"</span> <span class="na">align=</span><span class="s">"right"</span><span class="nt">&gt;</span>A2<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+<span class="nt">&lt;td</span> <span class="nt">&gt;</span>B2<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td</span> <span class="na">rowspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>B3<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;tr&gt;</span>
+<span class="nt">&lt;th</span> <span class="na">colspan=</span><span class="s">"2"</span> <span class="na">align=</span><span class="s">"left"</span><span class="nt">&gt;</span>C1<span class="nt">&lt;/th&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+
+    </div><!-- .post-content -->
+    <div style="margin-top: 3em"></div>
+    <div class="post-meta">
+      <span class="post-tags">Tags: <a href="/tags/#html-learn" rel="tag">html-learn</a></span>
+    </div><!-- .post-meta -->
+  </article><!-- .post -->
+
+  <div align="right"><a href="#page">Back to top</a></div>
+  <div style="margin-top: 3em"></div>
+
+</main><!-- .main-content -->
+      <footer class="site-footer">
+  <div class="offsite-links">
+    
+  </div><!-- .offsite-links -->
+  <div class="footer-bottom">
+    <div class="site-info">
+      <p>Copyright © 2007-21 To Sing Fung<br />Powered by Jekyll. Theme modified from Scriptor</p>
+
+    </div><!-- .site-info -->
+  </div><!-- .footer-bottom -->
+</footer><!-- .site-footer -->
+
+    </div><!-- .inner -->
+  </div><!-- .site -->
+
+
+</body>
+</html>
