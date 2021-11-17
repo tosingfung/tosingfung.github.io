@@ -40,6 +40,8 @@ jt -t monokai -f roboto -fs 12 -nf opensans -nfs 10 -tf opensans -tfs 10 -ofs 10
 jt -t grade3 -f roboto -fs 12 -nf opensans -nfs 10 -tf opensans -tfs 10 -ofs 10 -cellw 95% -lineh 150 -T
 ```
 
+## From Jupyter to GitHub Page
+
 Another amazing feature of Jupyter Notebook is to export the notebook as a `.md` file. By Adding the YAML front matter to the notebook as follows, the `.md` file can be directly uploaded to GitHub Page, keeping another accessible record of the learning process.
 
 ```yaml
