@@ -7,6 +7,8 @@ tag: software
 - Set up GitHub repo for image storage
 - Image upload with PicGo core in Typora
 
+<!--more-->
+
 ## GItHub image repository
 
 ![image-20211117160301378](https://raw.githubusercontent.com/tosingfung/images/master/image-20211117160301378.png)
