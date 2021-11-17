@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martin Fung&#39;s Page</title>
   <meta name="description" content="">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/page5/">
   <link rel="alternate" type="application/rss+xml" title="Martin Fung&#39;s Page Feed"
     href="http://localhost:4000/feed.xml">
   
@@ -61,25 +61,39 @@
   
   <article class="post">
     <header class="post-header">
-      <time class="post-date" datetime="2021-11-16">November 16, 2021</time>
-      <h2 class="post-title"><a href="/Python-related-software" rel="bookmark">Python-related software</a></h2>
+      <time class="post-date" datetime="2021-06-18">June 18, 2021</time>
+      <h2 class="post-title"><a href="/SeqRecord-and-SeqFeature" rel="bookmark">SeqRecord and SeqFeature</a></h2>
       <div class="post-meta">
         <span
           class="post-tags"> Tags: 
-          <a href="/tags/#software" rel="tag">software</a></span>
+          <a href="/tags/#python-learn" rel="tag">python-learn</a></span>
       </div><!-- .post-meta -->
       
     </header><!-- .post-header -->
     <div class="post-content">
       
       <ul>
-  <li>WinPython</li>
-  <li>Jupyter Notebook</li>
-  <li>Notepad++</li>
+  <li>record = SeqIO.read()</li>
+  <li><strong>SeqRecord Object</strong></li>
+  <li>record.id</li>
+  <li>record.name</li>
+  <li>record.description</li>
+  <li>record.annotations (dic)</li>
+  <li>record.annotations[‘source’]</li>
+  <li>record.features (list)</li>
+  <li><strong>SeqFeature Object</strong></li>
+  <li>feature.type</li>
+  <li>feature.location</li>
+  <li>feature.location.extract(record.seq)</li>
+  <li><strong>.type = “CDS”</strong></li>
+  <li>feature.qualifiers (dic)</li>
+  <li>feature.qualifiers[‘protein_id’] (list)</li>
+  <li>feature.qualifiers[‘product’] (list)</li>
+  <li>feature.qualifiers[‘translation’] (list)</li>
 </ul>
 
 
-      <p class="read-more"><a href="/Python-related-software" class="read-more-link">Continue reading &rarr;</a>
+      <p class="read-more"><a href="/SeqRecord-and-SeqFeature" class="read-more-link">Continue reading &rarr;</a>
       </p>
       
     </div><!-- .post-content -->
@@ -87,8 +101,8 @@
   
   <article class="post">
     <header class="post-header">
-      <time class="post-date" datetime="2021-09-01">September 1, 2021</time>
-      <h2 class="post-title"><a href="/Merger-for-Snapgene-exported-primers" rel="bookmark">Merger for Snapgene primers</a></h2>
+      <time class="post-date" datetime="2021-06-17">June 17, 2021</time>
+      <h2 class="post-title"><a href="/python-script-generate-random-oligo" rel="bookmark">Generate random oligo</a></h2>
       <div class="post-meta">
         <span
           class="post-tags"> Tags: 
@@ -99,11 +113,12 @@
     <div class="post-content">
       
       <ul>
-  <li>A quick python script to archive newly designed primers exported from Snapgene</li>
+  <li>Input integer A and B</li>
+  <li>Make A sequences (B-nt)</li>
 </ul>
 
 
-      <p class="read-more"><a href="/Merger-for-Snapgene-exported-primers" class="read-more-link">Continue reading &rarr;</a>
+      <p class="read-more"><a href="/python-script-generate-random-oligo" class="read-more-link">Continue reading &rarr;</a>
       </p>
       
     </div><!-- .post-content -->
@@ -111,8 +126,8 @@
   
   <article class="post">
     <header class="post-header">
-      <time class="post-date" datetime="2021-06-22">June 22, 2021</time>
-      <h2 class="post-title"><a href="/get-codon-usage-from-fasta" rel="bookmark">Get codon usage from FASTA</a></h2>
+      <time class="post-date" datetime="2021-06-17">June 17, 2021</time>
+      <h2 class="post-title"><a href="/python-script-add-overhang-to-oligo" rel="bookmark">Add overhang to oligo</a></h2>
       <div class="post-meta">
         <span
           class="post-tags"> Tags: 
@@ -123,12 +138,12 @@
     <div class="post-content">
       
       <ul>
-  <li>Build-in codon usage utility from Biopython gives an unsorted list of all codons</li>
-  <li>This script prints out a codon usage list sorted by amino acids</li>
+  <li>Input multiple targeting sequence</li>
+  <li>Return lentiCRISPRv2 cloning oligos</li>
 </ul>
 
 
-      <p class="read-more"><a href="/get-codon-usage-from-fasta" class="read-more-link">Continue reading &rarr;</a>
+      <p class="read-more"><a href="/python-script-add-overhang-to-oligo" class="read-more-link">Continue reading &rarr;</a>
       </p>
       
     </div><!-- .post-content -->
@@ -140,9 +155,11 @@
     <h2 class="screen-reader-text">Posts navigation</h2>
     <div class="nav-links">
       
-      <span class="page-number">Page 1 of 10</span>
+      <a href="/page4/" class="newer-posts">&larr; Newer Posts</a>
       
-      <a href="/page2/" class="older-posts">Older Posts &rarr;</a>
+      <span class="page-number">Page 5 of 10</span>
+      
+      <a href="/page6/" class="older-posts">Older Posts &rarr;</a>
       
     </div>
   </nav><!-- .pagination -->

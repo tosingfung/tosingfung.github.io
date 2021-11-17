@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martin Fung&#39;s Page</title>
   <meta name="description" content="">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/page3/">
   <link rel="alternate" type="application/rss+xml" title="Martin Fung&#39;s Page Feed"
     href="http://localhost:4000/feed.xml">
   
@@ -61,34 +61,8 @@
   
   <article class="post">
     <header class="post-header">
-      <time class="post-date" datetime="2021-11-16">November 16, 2021</time>
-      <h2 class="post-title"><a href="/Python-related-software" rel="bookmark">Python-related software</a></h2>
-      <div class="post-meta">
-        <span
-          class="post-tags"> Tags: 
-          <a href="/tags/#software" rel="tag">software</a></span>
-      </div><!-- .post-meta -->
-      
-    </header><!-- .post-header -->
-    <div class="post-content">
-      
-      <ul>
-  <li>WinPython</li>
-  <li>Jupyter Notebook</li>
-  <li>Notepad++</li>
-</ul>
-
-
-      <p class="read-more"><a href="/Python-related-software" class="read-more-link">Continue reading &rarr;</a>
-      </p>
-      
-    </div><!-- .post-content -->
-  </article><!-- .post -->
-  
-  <article class="post">
-    <header class="post-header">
-      <time class="post-date" datetime="2021-09-01">September 1, 2021</time>
-      <h2 class="post-title"><a href="/Merger-for-Snapgene-exported-primers" rel="bookmark">Merger for Snapgene primers</a></h2>
+      <time class="post-date" datetime="2021-06-20">June 20, 2021</time>
+      <h2 class="post-title"><a href="/fetch-write-enumerate-gb-records" rel="bookmark">Fetch and write GB files</a></h2>
       <div class="post-meta">
         <span
           class="post-tags"> Tags: 
@@ -99,11 +73,14 @@
     <div class="post-content">
       
       <ul>
-  <li>A quick python script to archive newly designed primers exported from Snapgene</li>
+  <li>Input a list of accession No.</li>
+  <li>Fetch all GB records in one handle</li>
+  <li>Write into one download.gb file</li>
+  <li>Parse and enumerate GB records</li>
 </ul>
 
 
-      <p class="read-more"><a href="/Merger-for-Snapgene-exported-primers" class="read-more-link">Continue reading &rarr;</a>
+      <p class="read-more"><a href="/fetch-write-enumerate-gb-records" class="read-more-link">Continue reading &rarr;</a>
       </p>
       
     </div><!-- .post-content -->
@@ -111,24 +88,57 @@
   
   <article class="post">
     <header class="post-header">
-      <time class="post-date" datetime="2021-06-22">June 22, 2021</time>
-      <h2 class="post-title"><a href="/get-codon-usage-from-fasta" rel="bookmark">Get codon usage from FASTA</a></h2>
+      <time class="post-date" datetime="2021-06-19">June 19, 2021</time>
+      <h2 class="post-title"><a href="/Compare-convert-SeqRecord" rel="bookmark">Compare/convert SeqRecord</a></h2>
       <div class="post-meta">
         <span
           class="post-tags"> Tags: 
-          <a href="/tags/#python-script" rel="tag">python-script</a></span>
+          <a href="/tags/#python-learn" rel="tag">python-learn</a></span>
       </div><!-- .post-meta -->
       
     </header><!-- .post-header -->
     <div class="post-content">
       
       <ul>
-  <li>Build-in codon usage utility from Biopython gives an unsorted list of all codons</li>
-  <li>This script prints out a codon usage list sorted by amino acids</li>
+  <li>record1.id == record2.id</li>
+  <li>record1.seq == record2.seq</li>
+  <li>record.format(“fasta”)</li>
+  <li>next(SeqIO.parse(“*.gbk”,”genbank”)) to read the first item in a file containing multiple items</li>
 </ul>
 
 
-      <p class="read-more"><a href="/get-codon-usage-from-fasta" class="read-more-link">Continue reading &rarr;</a>
+      <p class="read-more"><a href="/Compare-convert-SeqRecord" class="read-more-link">Continue reading &rarr;</a>
+      </p>
+      
+    </div><!-- .post-content -->
+  </article><!-- .post -->
+  
+  <article class="post">
+    <header class="post-header">
+      <time class="post-date" datetime="2021-06-19">June 19, 2021</time>
+      <h2 class="post-title"><a href="/Biopython-Parse-seq-records" rel="bookmark">Biopython Parse seq records</a></h2>
+      <div class="post-meta">
+        <span
+          class="post-tags"> Tags: 
+          <a href="/tags/#python-learn" rel="tag">python-learn</a></span>
+      </div><!-- .post-meta -->
+      
+    </header><!-- .post-header -->
+    <div class="post-content">
+      
+      <ul>
+  <li>from Bio import Entrez</li>
+  <li>with Entrez.efetch() as handle</li>
+  <li>record = SeqIO.read(handle,”gb”)</li>
+  <li>records = SeqIO.parse(handle,”gb”)</li>
+  <li>SeqIO.to_dict(records)</li>
+  <li>dicRecord = SeqIO.index(“*.gb”,”gb”)</li>
+  <li>SeqIO.write(records,”*.gb”,”gb”)</li>
+  <li>SeqIO.convert(“<em>.gb”,”gb”,”</em>.fasta”,”fasta”)</li>
+</ul>
+
+
+      <p class="read-more"><a href="/Biopython-Parse-seq-records" class="read-more-link">Continue reading &rarr;</a>
       </p>
       
     </div><!-- .post-content -->
@@ -140,9 +150,11 @@
     <h2 class="screen-reader-text">Posts navigation</h2>
     <div class="nav-links">
       
-      <span class="page-number">Page 1 of 10</span>
+      <a href="/page2/" class="newer-posts">&larr; Newer Posts</a>
       
-      <a href="/page2/" class="older-posts">Older Posts &rarr;</a>
+      <span class="page-number">Page 3 of 10</span>
+      
+      <a href="/page4/" class="older-posts">Older Posts &rarr;</a>
       
     </div>
   </nav><!-- .pagination -->

@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capsaicin essay</title>
+  <title>Martin Fung&#39;s Page</title>
   <meta name="description" content="">
-  <link rel="canonical" href="http://localhost:4000/capsaicin-essay">
+  <link rel="canonical" href="http://localhost:4000/page9/">
   <link rel="alternate" type="application/rss+xml" title="Martin Fung&#39;s Page Feed"
     href="http://localhost:4000/feed.xml">
   
@@ -42,16 +42,135 @@
 
       <main class="main-content fadeInDown delay_075s">
 
+  <article class="post" style="border: none; margin-bottom: 8em">
+  <h2>Hello!</h2>
+  <ul>
+  <li>I'm Martin Fung, a biologist from Hong Kong.</li>
+  <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=To+Sing+Fung%5Bau%5D+or+24987391%5Bpmid%5D">Click here for my PubMed search page</a></li>
+  <li><a href="https://scholar.google.com/citations?user=igL5v0QAAAAJ">Click here for my Google Scholar page</a></li>
+  </article>
+
+  <div style="
+  background:#f0f0f0;
+  text-align:center;
+  padding: 1em 0 1em;">
+  <h2 style="margin: 0">
+  - Recent posts -</h2>
+  </div>
+  
+  
   <article class="post">
     <header class="post-header">
-      <time class="post-date" datetime="2008-11-15">November 15, 2008 / Saturday</time>
-      <h1 class="post-title">Capsaicin essay</h1>
+      <time class="post-date" datetime="2021-05-10">May 10, 2021</time>
+      <h2 class="post-title"><a href="/Install-Ruby-and-Jekyll" rel="bookmark">Install Ruby and Jekyll</a></h2>
       <div class="post-meta">
-        <span class="post-tags">Tags: <a href="/tags/#undergraduate" rel="tag">undergraduate</a></span>
+        <span
+          class="post-tags"> Tags: 
+          <a href="/tags/#GitHub+page" rel="tag">GitHub page</a></span>
       </div><!-- .post-meta -->
       
     </header><!-- .post-header -->
     <div class="post-content">
+      
+      <h2 id="install-github-desktop">Install GitHub Desktop</h2>
+
+<p>This part was quite easy. Basically you just need to download and install <a href="https://desktop.github.com/">GitHub desktop</a>. It serves as a sync software like dropbox or nutstore, so that any change you modified on your local files can be sync to the repository online. Simply run GitHub desktop and click “<strong>Clone a repository from the Internet</strong>”. Choose the repository and select a disk path for the local copy. Press <strong>Clone</strong> and close GitHub Desktop.</p>
+
+<h2 id="install-ruby-and-jekyll">Install Ruby and Jekyll</h2>
+
+<p>Download and install <a href="https://rubyinstaller.org/downloads/">Ruby</a>. Choose the (x64) one with Devkit. At the time or writing, it is version 3.0.2-1. After installation, there will be three new icons in the Ruby folder in the start menu. Click on the <strong>Start Command Prompt with Ruby</strong>. Type <code class="highlighter-rouge">gem install jekyll bundler</code> to install Jekyll. Next go to the local folder containing the above repository. Type <code class="highlighter-rouge">jekyll new . --force</code>. This will install the plain minima theme.</p>
+
+<p>Type <code class="highlighter-rouge">bundle exec jekyll serve</code> to start a local server. This allows you to preview the changes in realtime. Simply open the web browser and go to <code class="highlighter-rouge">127.0.0.1:4000</code>. Changes to the site name and other core settings (site description ect) need to be done in the <code class="highlighter-rouge">_config.yml</code> file. <strong>And you need to restart Jekyll serve to see the changes</strong>. To restart, press <code class="highlighter-rouge">Ctrl-C</code> and type Y twice. Then retype <code class="highlighter-rouge">bundle exec jekyll serve</code>.</p>
+
+<h2 id="jekyll-themes">Jekyll themes</h2>
+
+<p>There are many good (and free) Jekyll themes online. Simply download them and make necessary style changes, and you’re ready to go. Sometimes you need to do <code class="highlighter-rouge">bundle install</code>. For new versions of Ruby 3.0+, you may also need to <code class="highlighter-rouge">bundle add webrick</code> before deploying the local server with <code class="highlighter-rouge">bundle exec jekyll serve</code>.</p>
+
+<h2 id="upload-to-github">Upload to GitHub</h2>
+
+<p>Finally, open GitHub Desktop and press <strong>commit to main</strong>, then <strong>Push Origin</strong>. It will tak 3-5 minutes before GitHub Pages finishes building your site. Also, if you have visited your site in the browser before, you may need to refresh several times (or clean up browser history) to see the modifications. In the future, if you just need to add a post or update a page, you can do so by uploading or editing files on GitHub in the web browser.</p>
+
+      
+    </div><!-- .post-content -->
+  </article><!-- .post -->
+  
+  <article class="post">
+    <header class="post-header">
+      <time class="post-date" datetime="2021-05-09">May 9, 2021</time>
+      <h2 class="post-title"><a href="/Set-up-a-simple-GitHub-Page" rel="bookmark">Set up a simple GitHub Page</a></h2>
+      <div class="post-meta">
+        <span
+          class="post-tags"> Tags: 
+          <a href="/tags/#GitHub+page" rel="tag">GitHub page</a></span>
+      </div><!-- .post-meta -->
+      
+    </header><!-- .post-header -->
+    <div class="post-content">
+      
+      <p>Recently I am trying to find somewhere to put my online CV. Ten years ago, I used Blogger and it got the job done well, although I did spend much time with the layout. When I checked on the pages recently, everything was perfectly preserved, including all the uploaded images. But Blogger does not adapt well in mobile devices, and as with all other Google products, you can’t access it in China. But still, one thing I like very much about Blogger is the powerful search function that allows you to quickly locate a post, and that you can post blogs by sending emails…</p>
+
+<p>I also tried <a href="https://sites.google.com/view/tosingfung">Google sites</a>. It was very easy to use and required almost no knowledge of HTML. Compared with the Dreamweaver that I used to mess around over ten years ago, this is really a bless. The preset templates also come in handy. If a small business needs to set up a info site, it could be easily done within hours. However, I feel like that when there are more than 20 pages, it may be quite difficult to maintain. Also, I would prefer a more streamline approach to add new pages.</p>
+
+<p>I also look at several Chinese sites powered by Markdown. <a href="https://www.csdn.net/">CSDN</a> has tons of Ad. <a href="https://www.jianshu.com/">简书</a> has fewer Ad, but you need to tie up your cell phone AND WeChat account before your blog can be published. I also checked on Wordpress, which adopted a new ‘Block’ editor that feels a bit like Google sites, although even more complicated. It has a lot of ‘Block’ templates for sharing images and videos, but all I need is a place to put some text, maybe sometimes with one or a few images. Plus, its editor starts slow as hell.</p>
+
+<h2 id="why-github">Why GitHub?</h2>
+
+<p>As a layman of the coding world, I come across GitHub from time to time when searching for softwares or plug-ins that fulfill a specific task. I understand that it can help to track code modifications between different versions for software developers, which sounds very powerful to me. But I never quite grasped how the site is organized and where they put what. That doesn’t really bother me until I realized GitHub can be used to host personal pages. So I gave it a try.</p>
+
+<h2 id="set-up-a-single-page">Set up a single page</h2>
+
+<ol>
+  <li>
+    <p>Register a GitHub account.
+<br />I am using <code class="highlighter-rouge">tosingfung</code> as my username</p>
+  </li>
+  <li>
+    <p>Create a <strong>public</strong> repository named: <code class="highlighter-rouge">tosingfung.github.io</code></p>
+
+    <blockquote>
+      <p>You must use this format, ie. <code class="highlighter-rouge">{username}.github.io</code></p>
+    </blockquote>
+  </li>
+  <li>
+    <p>In the <strong>Setting</strong> tab of that repository, go to <strong>Page</strong>, and click <strong>Change theme</strong>. Choose any one theme. Two files will be automatically generated:</p>
+
+    <blockquote>
+      <p>_config.yml<br />index.md</p>
+
+    </blockquote>
+  </li>
+  <li>
+    <p>Open <code class="highlighter-rouge">index.md</code> by clicking <strong>Edit this file</strong>.</p>
+  </li>
+  <li>
+    <p>Now you can write the page in markdown format. But it will be much easier to first write in any markdown editor (such as Typora), then paste the content here. Remember to click <strong>commit changes</strong> when you’re done.</p>
+  </li>
+  <li>
+    <p>This page can now be accessed by visiting https://tosingfung.github.io</p>
+  </li>
+</ol>
+
+<h2 id="whats-next">What’s next?</h2>
+
+<p>Of course this will only generate a single page, which suffices when you only need to showcase your product or cv. More complicated personal or business websites can be generated with Jekyll and hosted on GitHub.</p>
+
+      
+    </div><!-- .post-content -->
+  </article><!-- .post -->
+  
+  <article class="post">
+    <header class="post-header">
+      <time class="post-date" datetime="2008-11-15">November 15, 2008</time>
+      <h2 class="post-title"><a href="/capsaicin-essay" rel="bookmark">Capsaicin essay</a></h2>
+      <div class="post-meta">
+        <span
+          class="post-tags"> Tags: 
+          <a href="/tags/#undergraduate" rel="tag">undergraduate</a></span>
+      </div><!-- .post-meta -->
+      
+    </header><!-- .post-header -->
+    <div class="post-content">
+      
       <h2 id="capsaicin--the-hot-compound-in-chili-peppers">Capsaicin – the “Hot” Compound in Chili Peppers</h2>
 
 <p>Do you like spicy food? The most used spice worldwide is the Chili peppers. Although hot and delicious for some, the pungency is originally intended to protect the plant from mammals and fungal infection. The secondary metabolite accounting for the burning effect is a vanilloid compound called capsaicin, which stimulates the noxiceptors on the sensory neurons and produces the pain sensation. Recently, the receptor for capsaicin - TRPV1, is identified and cloned. Because of its important role in nociception and immune response, capsaicin has itself become a “HOT” topic in biochemical and medical research.</p>
@@ -179,17 +298,27 @@
   </li>
 </ol>
 
+      
     </div><!-- .post-content -->
-    <div style="margin-top: 3em"></div>
-    <div class="post-meta">
-      <span class="post-tags">Tags: <a href="/tags/#undergraduate" rel="tag">undergraduate</a></span>
-    </div><!-- .post-meta -->
   </article><!-- .post -->
+  
 
-  <div align="right"><a href="#page">Back to top</a></div>
-  <div style="margin-top: 3em"></div>
+  
+  <nav class="pagination">
+    <h2 class="screen-reader-text">Posts navigation</h2>
+    <div class="nav-links">
+      
+      <a href="/page8/" class="newer-posts">&larr; Newer Posts</a>
+      
+      <span class="page-number">Page 9 of 10</span>
+      
+      <a href="/page10/" class="older-posts">Older Posts &rarr;</a>
+      
+    </div>
+  </nav><!-- .pagination -->
+  
 
-</main><!-- .main-content -->
+</main><!-- .site-main -->
       <footer class="site-footer">
   <div class="offsite-links">
     

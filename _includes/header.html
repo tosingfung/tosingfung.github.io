@@ -2,13 +2,14 @@
 </h1>
 
 <h2 style="text-align: center; margin: 0">
+    <span>| <a href="/">Home</a></span>
     {% for item in site.navigation %}
     {% assign current = nil %}
     {% if page.url == item.url %}
     {% assign current = 'nav-current' %}
     {% endif %}
     <span>|</span>
-    <a style="padding: 0 0.5em 0" class="{{ current }}" href="{{ item.url }}">{{ item.text }}</a>
+    <a class="{{ current }}" href="{{ item.url }}">{{ item.text }}</a>
     {% endfor %}
     <span>|</span>
 </h2>
