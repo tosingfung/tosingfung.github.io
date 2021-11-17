@@ -75,9 +75,38 @@ pip install beautifulsoup4<br />
 pip install lxml</p>
 </blockquote>
 
+<p>Now that WinPython is installed, you can execute <code class="highlighter-rouge">.py</code> files by opening it with <strong>{root}\python-3.9.5.amd64\python.exe</strong>. Combining with Notepad++ mentioned below, it becomes very handy to test simple scripts.</p>
+
 <h2 id="jupyter-notebook">Jupyter Notebook</h2>
 
-<p>Now you can start the <strong>Jupyter Notebook.exe</strong> in the root folder of WinPython. Needless to say, Jupyter Notebook is the go-to IDE to learn python and to write script.</p>
+<p>Now you can start the <strong>Jupyter Notebook.exe</strong> in the root folder of WinPython. Needless to say, Jupyter Notebook is the go-to IDE to learn python and to write script. However, the default display of Jupyter is not user friendly. That’s why I have included <a href="https://github.com/dunovank/jupyter-themes">jupyterthemes</a> in the above libraries. Run the <strong>WinPython Command Prompt.exe</strong> and type:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Reset default theme
+</span><span class="n">jt</span> <span class="o">-</span><span class="n">r</span>
+
+<span class="c1"># monokai dark theme with larger fonts
+</span><span class="n">jt</span> <span class="o">-</span><span class="n">t</span> <span class="n">monokai</span> <span class="o">-</span><span class="n">f</span> <span class="n">roboto</span> <span class="o">-</span><span class="n">fs</span> <span class="mi">12</span> <span class="o">-</span><span class="n">nf</span> <span class="n">opensans</span> <span class="o">-</span><span class="n">nfs</span> <span class="mi">10</span> <span class="o">-</span><span class="n">tf</span> <span class="n">opensans</span> <span class="o">-</span><span class="n">tfs</span> <span class="mi">10</span> <span class="o">-</span><span class="n">ofs</span> <span class="mi">10</span> <span class="o">-</span><span class="n">cellw</span> <span class="mi">95</span><span class="o">%</span> <span class="o">-</span><span class="n">lineh</span> <span class="mi">150</span> <span class="o">-</span><span class="n">T</span>
+
+<span class="c1"># grade3 light theme with larger fonts
+</span><span class="n">jt</span> <span class="o">-</span><span class="n">t</span> <span class="n">grade3</span> <span class="o">-</span><span class="n">f</span> <span class="n">roboto</span> <span class="o">-</span><span class="n">fs</span> <span class="mi">12</span> <span class="o">-</span><span class="n">nf</span> <span class="n">opensans</span> <span class="o">-</span><span class="n">nfs</span> <span class="mi">10</span> <span class="o">-</span><span class="n">tf</span> <span class="n">opensans</span> <span class="o">-</span><span class="n">tfs</span> <span class="mi">10</span> <span class="o">-</span><span class="n">ofs</span> <span class="mi">10</span> <span class="o">-</span><span class="n">cellw</span> <span class="mi">95</span><span class="o">%</span> <span class="o">-</span><span class="n">lineh</span> <span class="mi">150</span> <span class="o">-</span><span class="n">T</span>
+</code></pre></div></div>
+
+<p>Another amazing feature of Jupyter Notebook is to export the notebook as a <code class="highlighter-rouge">.md</code> file. By Adding the YAML front matter to the notebook as follows, the <code class="highlighter-rouge">.md</code> file can be directly uploaded to GitHub Page, keeping another accessible record of the learning process.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">tag</span><span class="pi">:</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<h2 id="notepad">Notepad++</h2>
+
+<p>This is one of the many enhanced notepad applications available. Notepad++ has a portable version and very good auto-completion and syntax highlight features for most programing languages, even including HTML and CSS. Another great feature is that by combining with WinPython, you can set a keyboard shortcut to run the script. Press F5 and type (change the path when necessary), set <code class="highlighter-rouge">Ctrl-E</code> as shortcut:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmd /k D:\software\WPy64-3950\python-3.9.5.amd64\python.exe "$(FULL_CURRENT_PATH)" &amp; PAUSE &amp; EXIT
+</code></pre></div></div>
+
 
     </div><!-- .post-content -->
     <div style="margin-top: 3em"></div>

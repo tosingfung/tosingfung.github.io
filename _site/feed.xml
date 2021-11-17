@@ -5,8 +5,8 @@
         <description></description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 17 Nov 2021 09:30:47 +0800</pubDate>
-        <lastBuildDate>Wed, 17 Nov 2021 09:30:47 +0800</lastBuildDate>
+        <pubDate>Wed, 17 Nov 2021 10:16:56 +0800</pubDate>
+        <lastBuildDate>Wed, 17 Nov 2021 10:16:56 +0800</lastBuildDate>
         <generator>Jekyll v4.0.1</generator>
         
             <item>
@@ -34,9 +34,38 @@ pip install beautifulsoup4&lt;br /&gt;
 pip install lxml&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;p&gt;Now that WinPython is installed, you can execute &lt;code class=&quot;highlighter-rouge&quot;&gt;.py&lt;/code&gt; files by opening it with &lt;strong&gt;{root}\python-3.9.5.amd64\python.exe&lt;/strong&gt;. Combining with Notepad++ mentioned below, it becomes very handy to test simple scripts.&lt;/p&gt;
+
 &lt;h2 id=&quot;jupyter-notebook&quot;&gt;Jupyter Notebook&lt;/h2&gt;
 
-&lt;p&gt;Now you can start the &lt;strong&gt;Jupyter Notebook.exe&lt;/strong&gt; in the root folder of WinPython. Needless to say, Jupyter Notebook is the go-to IDE to learn python and to write script.&lt;/p&gt;
+&lt;p&gt;Now you can start the &lt;strong&gt;Jupyter Notebook.exe&lt;/strong&gt; in the root folder of WinPython. Needless to say, Jupyter Notebook is the go-to IDE to learn python and to write script. However, the default display of Jupyter is not user friendly. That’s why I have included &lt;a href=&quot;https://github.com/dunovank/jupyter-themes&quot;&gt;jupyterthemes&lt;/a&gt; in the above libraries. Run the &lt;strong&gt;WinPython Command Prompt.exe&lt;/strong&gt; and type:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Reset default theme
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# monokai dark theme with larger fonts
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;monokai&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;roboto&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opensans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nfs&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opensans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tfs&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ofs&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cellw&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;95&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lineh&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;150&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# grade3 light theme with larger fonts
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grade3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;roboto&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opensans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nfs&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opensans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tfs&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ofs&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cellw&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;95&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lineh&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;150&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Another amazing feature of Jupyter Notebook is to export the notebook as a &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; file. By Adding the YAML front matter to the notebook as follows, the &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; file can be directly uploaded to GitHub Page, keeping another accessible record of the learning process.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;notepad&quot;&gt;Notepad++&lt;/h2&gt;
+
+&lt;p&gt;This is one of the many enhanced notepad applications available. Notepad++ has a portable version and very good auto-completion and syntax highlight features for most programing languages, even including HTML and CSS. Another great feature is that by combining with WinPython, you can set a keyboard shortcut to run the script. Press F5 and type (change the path when necessary), set &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl-E&lt;/code&gt; as shortcut:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmd /k D:\software\WPy64-3950\python-3.9.5.amd64\python.exe &quot;$(FULL_CURRENT_PATH)&quot; &amp;amp; PAUSE &amp;amp; EXIT
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 </description>
                 <pubDate>Tue, 16 Nov 2021 00:00:00 +0800</pubDate>
                 <link>http://localhost:4000/Python-related-software</link>
