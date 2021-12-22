@@ -1,5 +1,5 @@
 ---
-title: Fetch GenBank from Seq List (ver.2)
+title: Fetch GenBank from Seq List
 layout: post
 tag: python-script
 ---
@@ -38,6 +38,7 @@ NC_002306.3
 
 ```python
 import os
+import re
 from Bio import Entrez
 from Bio import SeqIO
 
@@ -52,8 +53,8 @@ with open(f"{os.path.join(path,'sequence.seq')}","r") as ip:
 
 
 # fetch genbank data
-Entrez.email   = "tosingfung@qq.com"
-Entrez.api_key = "fa5971edd0a80ba2a99eaa7d6191f674d808"
+Entrez.email   = "xxx"
+Entrez.api_key = "xxx"
 print ('Fetching GenBank data...')
 with Entrez.efetch(db="nucleotide", id=id_concat, rettype="gb", retmode="text") as handle:
     records = SeqIO.parse(handle, "gb") 
