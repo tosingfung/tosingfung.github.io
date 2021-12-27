@@ -9,12 +9,9 @@ permalink: /cv
 
 <p align="right">
 <span>
-	Update: 2021-12-22
+	Update: 2021-12-27
 </span>
 </p>
-
-
-
 
 <div
 style="
@@ -213,9 +210,10 @@ margin: 0 0 0">
     <br>As corresponding author: <strong>7</strong>
 	<br>Impact factor > 15 : <strong>2 </strong>
 	<br>Impact factor > 5 : <strong>16 </strong>
-    <br>Total citation: <strong>2187 </strong><small>(as of 2021-12-22)</small>
+    <br>Total citation: <strong>2193 </strong><small>(as of 2021-12-27)</small>
 </span>
 </div>
+
 
 
 1. Li S, Liu S, Chen RA, Huang M, **Fung TS**\*, Liu DX\*. Activation of the MKK3­-p38-MK2-ZFP36 axis by coronavirus infection restricts the upregulation of AU-rich element-containing transcripts in proinflammatory response. ***Journal of Virology***. 2021 Accepted [\* **Co-corresponding authors**] `IF:5.103`

@@ -1,10 +1,13 @@
 ---
 layout: post
 tag: MS Office
-title: Insert Greeks in Word
+title: Insert Greek letters in Word
 ---
 
+- Several methods
+- Math Autocorrect is the best method
 
+<!--more-->
 
 ## Insert symbols
 
