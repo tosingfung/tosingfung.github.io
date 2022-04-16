@@ -9,7 +9,7 @@ permalink: /cv
 
 <p align="right">
 <span>
-	Update: 2021-12-27
+	Update: 2022-04-15
 </span>
 </p>
 
@@ -53,6 +53,12 @@ margin: 0 0 0">
 ---
 
 <h2><a name="work">Work Experience</a></h2>
+
+- **Research Associate**  
+  2022.1 – Now  
+  Department of Infectious Diseases and Public Health  
+  City University of Hong Kong  
+  Hong Kong, China
 
 - **Research Associate Professor**  
   2017.6 – 2021.6  
@@ -186,10 +192,10 @@ margin: 0 0 0">
 6. Guangdong Province Key Laboratory of Microbial Signals and Disease Control, Activation of ER stress response and innate immunity during coronavirus infection, MSDC-2017-06, 2017-2020, **Principal Investigator**, ¥80,000;
 
 7. Integrate Microbiology Research Center, Internal grant, **Principal Investigator**:  
-   2020-2021, ¥200,000 (bonus)  
-   2019-2020, ¥180,000 (bonus)  
-   2018-2019, ¥10,000 (bonus)  
-   2017-2018, ¥200,000 (Start-up) 
+   2020-2021, ¥200,000  
+   2019-2020, ¥180,000 
+   2018-2019, ¥10,000 
+   2017-2018, ¥200,000 
 
 <div style="text-align:right"><a href="#page">Back to top</a></div>
 
@@ -208,15 +214,16 @@ margin: 0 0 0">
 	<a href="https://pubmed.ncbi.nlm.nih.gov/?term=To+Sing+Fung%5Bau%5D+or+24987391%5Bpmid%5D">PubMed</a> / <a href="https://scholar.google.com/citations?user=igL5v0QAAAAJ">Google Scholar</a>
     <br>As first/co-first author: <strong>15</strong>
     <br>As corresponding author: <strong>7</strong>
-	<br>Impact factor > 15 : <strong>2 </strong>
-	<br>Impact factor > 5 : <strong>16 </strong>
-    <br>Total citation: <strong>2193 </strong><small>(as of 2021-12-27)</small>
+    <br>Impact factor > 15 : <strong>2 </strong>
+    <br>Impact factor > 5 : <strong>16 </strong>
+    <br>Total citation: <strong>2478 </strong><small>(as of 2022-04-15)</small>
+    <br>H-index: <strong>20 </strong>
 </span>
 </div>
 
 
 
-1. Li S, Liu S, Chen RA, Huang M, **Fung TS**\*, Liu DX\*. Activation of the MKK3­-p38-MK2-ZFP36 axis by coronavirus infection restricts the upregulation of AU-rich element-containing transcripts in proinflammatory response. ***Journal of Virology***. 2021 Accepted [\* **Co-corresponding authors**] `IF:5.103`
+1. Li S, Liu S, Chen RA, Huang M, **Fung TS**\*, Liu DX\*. Activation of the MKK3­-p38-MK2-ZFP36 axis by coronavirus infection restricts the upregulation of AU-rich element-containing transcripts in proinflammatory response. ***Journal of Virology***. 2022;96(5):e0208621. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2022li.pdf) `IF:5.103`
 
 2. Zhu QC, Li S, Yuan LX, Chen RA, Liu DX, **Fung TS**. Induction of the proinflammatory chemokine interleukin-8 Is regulated by integrated stress response and AP-1 family proteins activated during coronavirus Infection. ***International Journal of Molecular Sciences***. 2021;22(11):5646. [**<u>(PDF)</u>**](/pdf/paper2021zhu.pdf) `IF:5.923`
 
@@ -306,7 +313,7 @@ margin: 0 0 0">
 
 3. 中国发明专利；一株S蛋白融合HiBiT的传染性支气管炎重组病毒及制备方法与应用；冯涛声, 刘定祥, 朱庆春, 梁佳琪, 梁潇颖；申请号：201910910558.6
 
-4. 中国发明专利；一株缺失E蛋白离子通道活性的传染性支气管炎重组病毒及制备方法与应用；冯涛声, 刘定祥, 陈瑞爱, 李淑敏, 李延鹏, 梁佳琪, 袁丽霞, 朱庆春, 罗琼, 熊廷；申请号：201811449640.5
+4. 中国发明专利；一株缺失E蛋白离子通道活性的传染性支气管炎重组病毒及制备方法与应用；冯涛声, 刘定祥, 陈瑞爱, 李淑敏, 李延鹏, 梁佳琪, 袁丽霞, 朱庆春, 罗琼, 熊廷；授权公告日：2022年3月22日；专利号：ZL 2018 1 1449640.5
 
 5. 中国发明专利；一株M蛋白糖基化位点突变的传染性支气管炎病毒及其制备方法与应用；刘定祥, 冯涛声, 陈瑞爱, 梁佳琪, 李延鹏, 李淑敏, 袁丽霞, 朱庆春, 罗琼, 熊廷；申请号：201811389187.3
 
