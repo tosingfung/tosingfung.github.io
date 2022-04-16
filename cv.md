@@ -193,9 +193,9 @@ margin: 0 0 0">
 
 7. Integrate Microbiology Research Center, Internal grant, **Principal Investigator**:  
    2020-2021, ¥200,000  
-   2019-2020, ¥180,000 
-   2018-2019, ¥10,000 
-   2017-2018, ¥200,000 
+   2019-2020, ¥180,000  
+   2018-2019, ¥10,000  
+   2017-2018, ¥200,000
 
 <div style="text-align:right"><a href="#page">Back to top</a></div>
 
@@ -216,8 +216,9 @@ margin: 0 0 0">
     <br>As corresponding author: <strong>7</strong>
     <br>Impact factor > 15 : <strong>2 </strong>
     <br>Impact factor > 5 : <strong>16 </strong>
-    <br>Total citation: <strong>2478 </strong><small>(as of 2022-04-15)</small>
+    <br>Total citation: <strong>2478 </strong>
     <br>H-index: <strong>20 </strong>
+    <br><small>(as of 2022-04-15)</small>
 </span>
 </div>
 
