@@ -9,7 +9,7 @@ permalink: /cv
 
 <p align="right">
 <span>
-	Update: 2022-04-15
+	Update: 2022-08-16
 </span>
 </p>
 
@@ -207,8 +207,8 @@ margin: 0 0 0">
 	<a href="https://pubmed.ncbi.nlm.nih.gov/?term=To+Sing+Fung%5Bau%5D+or+24987391%5Bpmid%5D">PubMed</a> / <a href="https://scholar.google.com/citations?user=igL5v0QAAAAJ">Google Scholar</a>
     <br>As first/co-first author: <strong>15</strong>
     <br>As corresponding author: <strong>7</strong>
-    <br>Impact factor > 15 : <strong>2 </strong>
-    <br>Impact factor > 5 : <strong>16 </strong>
+    <br>Impact factor > 15 : <strong>3 </strong>
+    <br>Impact factor > 5 : <strong>18 </strong>
     <br>Total citation: <strong>2781 </strong>
     <br>H-index: <strong>21 </strong>
     <br><small>(as of 2022-08-16)</small>
@@ -219,57 +219,57 @@ margin: 0 0 0">
 
 1. Yuan LX, **Fung TS**, He JW, Chen RA, Liu DX. Modulation of viral replication, apoptosis and antiviral response by induction and mutual regulation of EGR and AP-1 family genes during coronavirus infection. ***Emerging Microbes & Infections***. 2022;11(1):1717-1729. [**<u>(PDF)</u>**](/pdf/paper2022yuan.pdf) `IF:19.568`
 
-1. Li S, Liu S, Chen RA, Huang M, **Fung TS**\*, Liu DX\*. Activation of the MKK3­-p38-MK2-ZFP36 axis by coronavirus infection restricts the upregulation of AU-rich element-containing transcripts in proinflammatory response. ***Journal of Virology***. 2022;96(5):e0208621. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2022li.pdf) `IF:5.103`
+1. Li S, Liu S, Chen RA, Huang M, **Fung TS**\*, Liu DX\*. Activation of the MKK3­-p38-MK2-ZFP36 axis by coronavirus infection restricts the upregulation of AU-rich element-containing transcripts in proinflammatory response. ***Journal of Virology***. 2022;96(5):e0208621. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2022li.pdf) `IF:6.549`
 
-1. Zhu QC, Li S, Yuan LX, Chen RA, Liu DX, **Fung TS**. Induction of the proinflammatory chemokine interleukin-8 Is regulated by integrated stress response and AP-1 family proteins activated during coronavirus Infection. ***International Journal of Molecular Sciences***. 2021;22(11):5646. [**<u>(PDF)</u>**](/pdf/paper2021zhu.pdf) `IF:5.923`
+1. Zhu QC, Li S, Yuan LX, Chen RA, Liu DX, **Fung TS**. Induction of the proinflammatory chemokine interleukin-8 Is regulated by integrated stress response and AP-1 family proteins activated during coronavirus Infection. ***International Journal of Molecular Sciences***. 2021;22(11):5646. [**<u>(PDF)</u>**](/pdf/paper2021zhu.pdf) `IF:6.208`
 
-1. **Fung TS**, Liu DX. Similarities and dissimilarities of covid-19 and other coronavirus diseases. ***Annual Review of Microbiology***. 2021;75:19-47. [**<u>(PDF)</u>**](/pdf/paper2021fung.pdf) `IF:15.500`
+1. **Fung TS**, Liu DX. Similarities and dissimilarities of covid-19 and other coronavirus diseases. ***Annual Review of Microbiology***. 2021;75:19-47. [**<u>(PDF)</u>**](/pdf/paper2021fung.pdf) `IF:16.232`
 
-1. Yuan LX, Liang JQ, Zhu QC, Dai G, Li S, **Fung TS**\*, Liu DX\*. gammacoronavirus avian infectious bronchitis virus and alphacoronavirus porcine epidemic diarrhea virus exploit a cell-survival strategy via upregulation of cFOS to promote viral replication. ***Journal of Virology***. 2020;95(4):e02107-20. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2020yuan.pdf) `IF:5.103`
+1. Yuan LX, Liang JQ, Zhu QC, Dai G, Li S, **Fung TS**\*, Liu DX\*. gammacoronavirus avian infectious bronchitis virus and alphacoronavirus porcine epidemic diarrhea virus exploit a cell-survival strategy via upregulation of cFOS to promote viral replication. ***Journal of Virology***. 2020;95(4):e02107-20. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2020yuan.pdf) `IF:6.549`
 
-1. Dai G, Huang M, **Fung TS**\*, Liu DX\*. Research progress in the development of porcine reproductive and respiratory syndrome virus as a viral vector for foreign gene expression and delivery. ***Expert Review of Vaccines***. 2020;19(11):1041-1051. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2020dai.pdf) `IF:5.217`
+1. Dai G, Huang M, **Fung TS**\*, Liu DX\*. Research progress in the development of porcine reproductive and respiratory syndrome virus as a viral vector for foreign gene expression and delivery. ***Expert Review of Vaccines***. 2020;19(11):1041-1051. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2020dai.pdf) `IF:5.683`
 
-6. Wang N, Huang M, **Fung TS**, Luo Q, Ye JX, Du QR, Wen LH, Liu DX, Chen RA. Rapid development of an effective newcastle disease virus vaccine candidate by attenuation of a genotype VII velogenic isolate using a simple infectious cloning system. ***Frontiers in Veterinary Science***. 2020;7:648. [**<u>(PDF)</u>**](/pdf/paper2020wang.pdf) `IF:3.412`
+1. Wang N, Huang M, **Fung TS**, Luo Q, Ye JX, Du QR, Wen LH, Liu DX, Chen RA. Rapid development of an effective newcastle disease virus vaccine candidate by attenuation of a genotype VII velogenic isolate using a simple infectious cloning system. ***Frontiers in Veterinary Science***. 2020;7:648. [**<u>(PDF)</u>**](/pdf/paper2020wang.pdf) `IF:3.471`
 
-7. Liang XY, Zhu QC, Liang JQ, Liu SY, Liu DX, **Fung TS**. Development of HiBiT-tagged recombinant infectious bronchitis coronavirus for efficient in vitro and in vivo viral quantification. ***Frontiers in Microbiology***. 2020;11:2100. [**<u>(PDF)</u>**](/pdf/paper2020liang.pdf) `IF:5.640`
+1. Liang XY, Zhu QC, Liang JQ, Liu SY, Liu DX, **Fung TS**. Development of HiBiT-tagged recombinant infectious bronchitis coronavirus for efficient in vitro and in vivo viral quantification. ***Frontiers in Microbiology***. 2020;11:2100. [**<u>(PDF)</u>**](/pdf/paper2020liang.pdf) `IF:6.064`
 
-8. Li S, Yuan L, Dai G, Chen RA, Liu DX, **Fung TS**. Regulation of the ER stress response by the ion channel activity of the infectious bronchitis coronavirus envelope protein modulates virion release, apoptosis, viral fitness, and pathogenesis. ***Frontiers in Microbiology***. 2020;10:3022. [**<u>(PDF)</u>**](/pdf/paper2020li.pdf) `IF:5.640`
+1. Li S, Yuan L, Dai G, Chen RA, Liu DX, **Fung TS**. Regulation of the ER stress response by the ion channel activity of the infectious bronchitis coronavirus envelope protein modulates virion release, apoptosis, viral fitness, and pathogenesis. ***Frontiers in Microbiology***. 2020;10:3022. [**<u>(PDF)</u>**](/pdf/paper2020li.pdf) `IF:6.064`
 
-9. **Fung TS**, Liu DX. Human coronavirus: host-pathogen interaction. ***Annual Review of Microbiology***. 2019;73:529-557. [**<u>(PDF)</u>**](/pdf/paper2019fung2.pdf) `IF:15.500`
+1. **Fung TS**, Liu DX. Human coronavirus: host-pathogen interaction. ***Annual Review of Microbiology***. 2019;73:529-557. [**<u>(PDF)</u>**](/pdf/paper2019fung2.pdf) `IF:16.232`
 
-10. **Fung TS**, Liu DX. The ER stress sensor IRE1 and MAP kinase ERK modulate autophagy induction in cells infected with coronavirus infectious bronchitis virus. ***Virology***. 2019;533:34-44. [**<u>(PDF)</u>**](/pdf/paper2019fung1.pdf) `IF:3.616`
+1. **Fung TS**, Liu DX. The ER stress sensor IRE1 and MAP kinase ERK modulate autophagy induction in cells infected with coronavirus infectious bronchitis virus. ***Virology***. 2019;533:34-44. [**<u>(PDF)</u>**](/pdf/paper2019fung1.pdf) `IF:3.513`
 
-11. Liang JQ, Fang S, Yuan Q, Huang M, Chen RA, **Fung TS**\*, Liu DX\*. N-Linked glycosylation of the membrane protein ectodomain regulates infectious bronchitis virus-induced ER stress response, apoptosis and pathogenesis. ***Virology***. 2019;531:48-56. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2019liang.pdf) `IF:3.616`
+1. Liang JQ, Fang S, Yuan Q, Huang M, Chen RA, **Fung TS**\*, Liu DX\*. N-Linked glycosylation of the membrane protein ectodomain regulates infectious bronchitis virus-induced ER stress response, apoptosis and pathogenesis. ***Virology***. 2019;531:48-56. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2019liang.pdf) `IF:3.513`
 
-12. Regmi S, **Fung TS**, Lim S, Luo KQ. Fluidic shear stress increases the anti- cancer effects of ROS-generating drugs in circulating tumor cells. ***Breast Cancer Research and Treatment***. 2018;172(2):297-312. [**<u>(PDF)</u>**](/pdf/paper2018regmi.pdf) `IF:4.872`
+1. Regmi S, **Fung TS**, Lim S, Luo KQ. Fluidic shear stress increases the anti- cancer effects of ROS-generating drugs in circulating tumor cells. ***Breast Cancer Research and Treatment***. 2018;172(2):297-312. [**<u>(PDF)</u>**](/pdf/paper2018regmi.pdf) `IF:4.624`
 
-13. Fung TS, Liu DX. Post-translational modifications of coronavirus proteins: roles and function. ***Future Virology***. 2018;13(6):405-430. [**<u>(PDF)</u>**](/pdf/paper2018fung2.pdf) `IF:1.831`
+1. Fung TS, Liu DX. Post-translational modifications of coronavirus proteins: roles and function. ***Future Virology***. 2018;13(6):405-430. [**<u>(PDF)</u>**](/pdf/paper2018fung2.pdf) `IF:3.015`
 
-14. Wong HH\#, **Fung TS**\#, Fang S, Huang M, Le MT, Liu DX. Accessory proteins 8b and 8ab of severe acute respiratory syndrome coronavirus suppress the interferon signaling pathway by mediating ubiquitin-dependent rapid degradation of interferon regulatory factor 3. ***Virology***. 2018;515:165-175. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2018wong.pdf) `IF:3.616`
+1. Wong HH\#, **Fung TS**\#, Fang S, Huang M, Le MT, Liu DX. Accessory proteins 8b and 8ab of severe acute respiratory syndrome coronavirus suppress the interferon signaling pathway by mediating ubiquitin-dependent rapid degradation of interferon regulatory factor 3. ***Virology***. 2018;515:165-175. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2018wong.pdf) `IF:3.513`
 
-15. **Fung TS**, Liu DX. Activation of the c-Jun NH2-terminal kinase pathway by coronavirus infectious bronchitis virus promotes apoptosis independently of c-Jun. ***Cell Death & Disease***. 2017;8(12):3215. [**<u>(PDF)</u>**](/pdf/paper2018fung1.pdf) `IF:8.469`
+1. **Fung TS**, Liu DX. Activation of the c-Jun NH2-terminal kinase pathway by coronavirus infectious bronchitis virus promotes apoptosis independently of c-Jun. ***Cell Death & Disease***. 2017;8(12):3215. [**<u>(PDF)</u>**](/pdf/paper2018fung1.pdf) `IF:9.705`
 
-16. Tan YW\#, **Fung TS**\#, Shen H, Huang M, Liu DX. Coronavirus infectious bronchitis virus non-structural proteins 8 and 12 form stable complex independent of the non-translated regions of viral RNA and other viral proteins. ***Virology***. 2018;513:75-84. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2018tan.pdf) `IF:3.616`
+1. Tan YW\#, **Fung TS**\#, Shen H, Huang M, Liu DX. Coronavirus infectious bronchitis virus non-structural proteins 8 and 12 form stable complex independent of the non-translated regions of viral RNA and other viral proteins. ***Virology***. 2018;513:75-84. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2018tan.pdf) `IF:3.513`
 
-17. Zheng J\#, Yamada Y\#, **Fung TS**\#, Huang M, Chia R, Liu DX. Identification of N-linked glycosylation sites in the spike protein and their functional impact on the replication and infectivity of coronavirus infectious bronchitis virus in cell culture. ***Virology***. 2018;513:65-74. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2018zheng.pdf) `IF:3.616`
+1. Zheng J\#, Yamada Y\#, **Fung TS**\#, Huang M, Chia R, Liu DX. Identification of N-linked glycosylation sites in the spike protein and their functional impact on the replication and infectivity of coronavirus infectious bronchitis virus in cell culture. ***Virology***. 2018;513:65-74. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2018zheng.pdf) `IF:3.513`
 
-18. To J\#, Surya W\#, **Fung TS**\#, Li Y, Verdià-Bàguena C, Queralt-Martin M, Aguilella VM, Liu DX, Torres J. Channel-inactivating mutations and their revertant mutants in the envelope protein of infectious bronchitis virus. ***J Virol***. 2017;91(5):e02158-16. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2017to.pdf) `IF:5.103`
+1. To J\#, Surya W\#, **Fung TS**\#, Li Y, Verdià-Bàguena C, Queralt-Martin M, Aguilella VM, Liu DX, Torres J. Channel-inactivating mutations and their revertant mutants in the envelope protein of infectious bronchitis virus. ***Journal of Virology***. 2017;91(5):e02158-16. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2017to.pdf) `IF:6.549`
 
-19. **Fung TS**, Liao Y, Liu DX. Regulation of stress responses and translational control by coronavirus. ***Viruses-Basel***. 2016;8(7):184. [**<u>(PDF)</u>**](/pdf/paper2016fung.pdf) `IF:5.048`
+1. **Fung TS**, Liao Y, Liu DX. Regulation of stress responses and translational control by coronavirus. ***Viruses-Basel***. 2016;8(7):184. [**<u>(PDF)</u>**](/pdf/paper2016fung.pdf) `IF:5.818`
 
-20. **Fung TS**, Torres J, Liu DX. The emerging roles of viroporins in er stress response and autophagy induction during virus infection. ***Viruses-Basel***. 2015;7(6):2834-57. [**<u>(PDF)</u>**](/pdf/paper2015fung.pdf) `IF:5.048`
+1. **Fung TS**, Torres J, Liu DX. The emerging roles of viroporins in er stress response and autophagy induction during virus infection. ***Viruses-Basel***. 2015;7(6):2834-57. [**<u>(PDF)</u>**](/pdf/paper2015fung.pdf) `IF:5.818`
 
-21. Ao D, Guo HC, Sun SQ, Sun DH, **Fung TS**, Wei YQ, Han SC, Yao XP, Cao SZ, Liu DX, Liu XT. Viroporin activity of the foot-and-mouth disease virus non- structural 2B protein. ***PLoS One***. 2015;10(5):e0125828. [**<u>(PDF)</u>**](/pdf/paper2015ao.pdf) `IF:3.240`
+1. Ao D, Guo HC, Sun SQ, Sun DH, **Fung TS**, Wei YQ, Han SC, Yao XP, Cao SZ, Liu DX, Liu XT. Viroporin activity of the foot-and-mouth disease virus non- structural 2B protein. ***PLoS One***. 2015;10(5):e0125828. [**<u>(PDF)</u>**](/pdf/paper2015ao.pdf) `IF:3.752`
 
-22. **Fung TS**, Huang M, Liu DX. Coronavirus-induced ER stress response and its involvement in regulation of coronavirus-host interactions. ***Virus Research***. 2014;194:110-23. [**<u>(PDF)</u>**](/pdf/paper2014fung3.pdf) `IF:3.303`
+1. **Fung TS**, Huang M, Liu DX. Coronavirus-induced ER stress response and its involvement in regulation of coronavirus-host interactions. ***Virus Research***. 2014;194:110-23. [**<u>(PDF)</u>**](/pdf/paper2014fung3.pdf) `IF:6.286`
 
-23. **Fung TS**, Liao Y, Liu DX. The endoplasmic reticulum stress sensor IRE1 protects cells from apoptosis induced by the coronavirus infectious bronchitis virus. ***Journal of Virology***. 2014;88(21):12752-64. [**<u>(PDF)</u>**](/pdf/paper2014fung2.pdf) `IF:5.103`
+1. **Fung TS**, Liao Y, Liu DX. The endoplasmic reticulum stress sensor IRE1 protects cells from apoptosis induced by the coronavirus infectious bronchitis virus. ***Journal of Virology***. 2014;88(21):12752-64. [**<u>(PDF)</u>**](/pdf/paper2014fung2.pdf) `IF:6.549`
 
-24. Liu DX, **Fung TS**, Chong KK, Shukla A, Hilgenfeld R. Accessory proteins of SARS-CoV and other coronaviruses. ***Antiviral Research***. 2014;109:97-109. [**<u>(PDF)</u>**](/pdf/paper2014liu.pdf) `IF:5.970`
+1. Liu DX, **Fung TS**, Chong KK, Shukla A, Hilgenfeld R. Accessory proteins of SARS-CoV and other coronaviruses. ***Antiviral Research***. 2014;109:97-109. [**<u>(PDF)</u>**](/pdf/paper2014liu.pdf) `IF:10.103`
 
-25. **Fung TS**, Liu DX. Coronavirus infection, ER stress, apoptosis and innate immunity. ***Frontiers in Microbiology***. 2014;5:296. [**<u>(PDF)</u>**](/pdf/paper2014fung1.pdf) `IF:5.640`
+1. **Fung TS**, Liu DX. Coronavirus infection, ER stress, apoptosis and innate immunity. ***Frontiers in Microbiology***. 2014;5:296. [**<u>(PDF)</u>**](/pdf/paper2014fung1.pdf) `IF:6.064`
 
-26. Liao Y\#, **Fung TS**\#, Huang M, Fang SG, Zhong Y, Liu DX. Upregulation of CHOP/GADD153 during coronavirus infectious bronchitis virus infection modulates apoptosis by restricting activation of the extracellular signal-regulated kinase pathway. ***J Virol***. 2013;87(14):8124-34. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2013liao.pdf) `IF:5.103`
+1. Liao Y\#, **Fung TS**\#, Huang M, Fang SG, Zhong Y, Liu DX. Upregulation of CHOP/GADD153 during coronavirus infectious bronchitis virus infection modulates apoptosis by restricting activation of the extracellular signal-regulated kinase pathway. ***Journal of Virology***. 2013;87(14):8124-34. [\# **Co-first authors**] [**<u>(PDF)</u>**](/pdf/paper2013liao.pdf) `IF:6.549`
 
 <div style="text-align:right"><a href="#page">Back to top</a></div>
 
