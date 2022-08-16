@@ -217,7 +217,7 @@ margin: 0 0 0">
 
 
 
-1. Yuan LX, **Fung TS**, He JW, Chen RA, Liu DX. Modulation of viral replication, apoptosis and antiviral response by induction and mutual regulation of EGR and AP-1 family genes during coronavirus infection. ***Emerging Microbes & Infections***. 2022;11(1):1717-1729. [**<u>(PDF)</u>**](/pdf/paper2022yuan.pdf) `IF:19.568`
+1. Yuan LX, **Fung TS**, He JW, Chen RA, Liu DX. Modulation of viral replication, apoptosis and antiviral response by induction and mutual regulation of EGR and AP-1 family genes during coronavirus infection. ***Emerging Microbes & Infections***. 2022;11(1):1717-1729. [**<u>(PDF)</u>**](/pdf/paper2022yuan1.pdf) `IF:19.568`
 
 1. Li S, Liu S, Chen RA, Huang M, **Fung TS**\*, Liu DX\*. Activation of the MKK3­-p38-MK2-ZFP36 axis by coronavirus infection restricts the upregulation of AU-rich element-containing transcripts in proinflammatory response. ***Journal of Virology***. 2022;96(5):e0208621. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2022li.pdf) `IF:6.549`
 
