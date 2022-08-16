@@ -145,20 +145,13 @@ margin: 0 0 0">
 
 ---
 
-<h2><a name="research">Previous Research Directions</a></h2>
+<h2><a name="research">Research Focuses</a></h2>
 
-- Coronavirus replication and pathogenesis
-  - Ion channel proteins (viroporins)
-  - PTMs of viral proteins
-  - Virulence determinants
-- Coronavirus-host interaction
-  - Cellular stress response
-  - Programmed cell death
-  - Pro-inflammatory response
-  - Intrinsic/innate immunity
-- Reverse genetics of RNA viruses
-  - Reporter viruses and viral vectors
-  - Recombinant vaccine candidates
+- Antivirals against coronaviruses infections
+- Plasmonic Photothermal PCR for rapid diagnostics
+- Coronavirus viroporins (Ion channel proteins)
+- Coronavirus-host interactions
+- Reverse genetics of coronavirus and other viruses
 
 <div style="text-align:right"><a href="#page">Back to top</a></div>
 
@@ -216,23 +209,25 @@ margin: 0 0 0">
     <br>As corresponding author: <strong>7</strong>
     <br>Impact factor > 15 : <strong>2 </strong>
     <br>Impact factor > 5 : <strong>16 </strong>
-    <br>Total citation: <strong>2478 </strong>
-    <br>H-index: <strong>20 </strong>
-    <br><small>(as of 2022-04-15)</small>
+    <br>Total citation: <strong>2781 </strong>
+    <br>H-index: <strong>21 </strong>
+    <br><small>(as of 2022-08-16)</small>
 </span>
 </div>
 
 
 
+1. Yuan LX, **Fung TS**, He JW, Chen RA, Liu DX. Modulation of viral replication, apoptosis and antiviral response by induction and mutual regulation of EGR and AP-1 family genes during coronavirus infection. ***Emerging Microbes & Infections***. 2022;11(1):1717-1729. [**<u>(PDF)</u>**](/pdf/paper2022yuan.pdf) `IF:19.568`
+
 1. Li S, Liu S, Chen RA, Huang M, **Fung TS**\*, Liu DX\*. Activation of the MKK3­-p38-MK2-ZFP36 axis by coronavirus infection restricts the upregulation of AU-rich element-containing transcripts in proinflammatory response. ***Journal of Virology***. 2022;96(5):e0208621. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2022li.pdf) `IF:5.103`
 
-2. Zhu QC, Li S, Yuan LX, Chen RA, Liu DX, **Fung TS**. Induction of the proinflammatory chemokine interleukin-8 Is regulated by integrated stress response and AP-1 family proteins activated during coronavirus Infection. ***International Journal of Molecular Sciences***. 2021;22(11):5646. [**<u>(PDF)</u>**](/pdf/paper2021zhu.pdf) `IF:5.923`
+1. Zhu QC, Li S, Yuan LX, Chen RA, Liu DX, **Fung TS**. Induction of the proinflammatory chemokine interleukin-8 Is regulated by integrated stress response and AP-1 family proteins activated during coronavirus Infection. ***International Journal of Molecular Sciences***. 2021;22(11):5646. [**<u>(PDF)</u>**](/pdf/paper2021zhu.pdf) `IF:5.923`
 
-3. **Fung TS**, Liu DX. Similarities and dissimilarities of covid-19 and other coronavirus diseases. ***Annual Review of Microbiology***. 2021;75:19-47. [**<u>(PDF)</u>**](/pdf/paper2021fung.pdf) `IF:15.500`
+1. **Fung TS**, Liu DX. Similarities and dissimilarities of covid-19 and other coronavirus diseases. ***Annual Review of Microbiology***. 2021;75:19-47. [**<u>(PDF)</u>**](/pdf/paper2021fung.pdf) `IF:15.500`
 
-4. Yuan LX, Liang JQ, Zhu QC, Dai G, Li S, **Fung TS**\*, Liu DX\*. gammacoronavirus avian infectious bronchitis virus and alphacoronavirus porcine epidemic diarrhea virus exploit a cell-survival strategy via upregulation of cFOS to promote viral replication. ***Journal of Virology***. 2020;95(4):e02107-20. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2020yuan.pdf) `IF:5.103`
+1. Yuan LX, Liang JQ, Zhu QC, Dai G, Li S, **Fung TS**\*, Liu DX\*. gammacoronavirus avian infectious bronchitis virus and alphacoronavirus porcine epidemic diarrhea virus exploit a cell-survival strategy via upregulation of cFOS to promote viral replication. ***Journal of Virology***. 2020;95(4):e02107-20. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2020yuan.pdf) `IF:5.103`
 
-5. Dai G, Huang M, **Fung TS**\*, Liu DX\*. Research progress in the development of porcine reproductive and respiratory syndrome virus as a viral vector for foreign gene expression and delivery. ***Expert Review of Vaccines***. 2020;19(11):1041-1051. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2020dai.pdf) `IF:5.217`
+1. Dai G, Huang M, **Fung TS**\*, Liu DX\*. Research progress in the development of porcine reproductive and respiratory syndrome virus as a viral vector for foreign gene expression and delivery. ***Expert Review of Vaccines***. 2020;19(11):1041-1051. [\* **Co-corresponding authors**] [**<u>(PDF)</u>**](/pdf/paper2020dai.pdf) `IF:5.217`
 
 6. Wang N, Huang M, **Fung TS**, Luo Q, Ye JX, Du QR, Wen LH, Liu DX, Chen RA. Rapid development of an effective newcastle disease virus vaccine candidate by attenuation of a genotype VII velogenic isolate using a simple infectious cloning system. ***Frontiers in Veterinary Science***. 2020;7:648. [**<u>(PDF)</u>**](/pdf/paper2020wang.pdf) `IF:3.412`
 
