@@ -9,7 +9,7 @@ permalink: /cv
 
 <p align="right">
 <span>
-	Update: 2022-08-16
+	Update: 2022-08-27
 </span>
 </p>
 
@@ -209,13 +209,13 @@ margin: 0 0 0">
     <br>As corresponding author: <strong>7</strong>
     <br>Impact factor > 15 : <strong>3 </strong>
     <br>Impact factor > 5 : <strong>18 </strong>
-    <br>Total citation: <strong>2781 </strong>
+    <br>Total citation: <strong>2811 </strong>
     <br>H-index: <strong>21 </strong>
     <br><small>(as of 2022-08-16)</small>
 </span>
 </div>
 
-
+1. Yuan LX, Yang B, **Fung TS**, Chen RA, Liu DX. Transcriptomic analysis reveals crucial regulatory roles of immediate-early response genes and related signaling pathways in coronavirus infectious bronchitis virus infection. ***Virology***. 2022;14(575):1-9. [**<u>(PDF)</u>**](/pdf/paper2022yuan2.pdf) `IF:3.513`
 
 1. Yuan LX, **Fung TS**, He JW, Chen RA, Liu DX. Modulation of viral replication, apoptosis and antiviral response by induction and mutual regulation of EGR and AP-1 family genes during coronavirus infection. ***Emerging Microbes & Infections***. 2022;11(1):1717-1729. [**<u>(PDF)</u>**](/pdf/paper2022yuan1.pdf) `IF:19.568`
 
