@@ -9,7 +9,7 @@ permalink: /cv
 
 <p align="right">
 <span>
-	Update: 2022-08-27
+	Update: 2022-10
 </span>
 </p>
 
@@ -209,9 +209,9 @@ margin: 0 0 0">
     <br>As corresponding author: <strong>7</strong>
     <br>Impact factor > 15 : <strong>3 </strong>
     <br>Impact factor > 5 : <strong>18 </strong>
-    <br>Total citation: <strong>2811 </strong>
+    <br>Total citation: <strong>2938 </strong>
     <br>H-index: <strong>21 </strong>
-    <br><small>(as of 2022-08-16)</small>
+    <br><small>(as of 2022-10)</small>
 </span>
 </div>
 
