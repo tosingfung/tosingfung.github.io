@@ -41,7 +41,7 @@ accent_color: '#2d72d9'
 
 # Site footer
 footer:
-  content: "Copyright &copy; 2007-21 To Sing Fung<br>Powered by Jekyll. Theme modified from Scriptor"
+  content: "Copyright &copy; To Sing Fung<br>Powered by Jekyll. Theme modified from Scriptor."
   has_social: false
   
 # Plugins
