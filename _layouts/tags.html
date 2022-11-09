@@ -22,7 +22,7 @@ layout: default
         
         <ul class="archive-post-list">
         {% for post in site.tags[tag] %}
-          <li>&#x2022;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </li>
+          <li>&#x2022;&nbsp;<span class="archive-meta"><time class="archive-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%Y-%m-%d" }}</time> — </span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </li>
         {% endfor %}
         </ul><!-- .archive-post-list -->
 <p><a href="#top" class="archive-top-link">Back to Top</a></p>
